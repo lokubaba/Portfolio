@@ -146,13 +146,13 @@ footer h2{font-size:clamp(2.2rem,6vw,3.8rem);max-width:14ch}
 </head>
 <body>
 <div id="bar"></div>
-<nav><div class="wrap"><b>Lokesh Deswal</b><a href="#journey">Journey</a><a href="#work">Work</a><a href="#capstone">Capstone</a><a href="#skills">Skills</a><a href="#contact">Contact</a><button class="btn btn-sm" id="btnNavResume">Resume</button><button id="theme" aria-label="Toggle light and dark theme">◐</button></div></nav>
+<nav><div class="wrap"><b>Lokesh Deswal</b><a href="#journey">Journey</a><a href="#work">Work</a><a href="#capstone">Capstone</a><a href="#skills">Skills</a><a href="#contact">Contact</a><button id="theme" aria-label="Toggle light and dark theme">◐</button></div></nav>
 
 <header class="hero" id="top"><div class="wrap">
 <small>Lokesh Deswal • Product Manager</small>
 <h1 id="h1">I build products the way I ran a ₹6Cr business: solving root friction first.</h1>
 <p>From scaling a ₹6Cr venture to shipping enterprise PropTech and production workflow tools. IIT Guwahati engineering foundation, with a track record of cutting 6-month roadmaps to 4 and shrinking multi-hour workflows to minutes.</p>
-<a class="btn main" href="#capstone">Explore the Porter capstone</a><a class="btn" href="#work">Explore shipped products</a><button class="btn" id="btnHeroResume">View ATS Resume</button>
+<a class="btn main" href="#capstone">Explore the Porter capstone</a><a class="btn" href="#work">Explore shipped products</a>
 <div class="stats">
 <div><b data-n="4" data-s=" mo">0</b><span>MVP shipped vs 6-mo estimate (Relata)</span></div>
 <div><b data-n="95" data-s="%">0</b><span>workflow compression (2–5 hrs to 10 min)</span></div>
@@ -408,10 +408,8 @@ tween('r1',trips,function(x){return Math.round(x).toLocaleString('en-IN')});twee
 var modal=$('#resumeModal');
 function openModal(){modal.classList.add('open');document.body.style.overflow='hidden'}
 function closeModal(){modal.classList.remove('open');document.body.style.overflow=''}
-$('#btnNavResume').onclick=openModal;
-$('#btnHeroResume').onclick=openModal;
-$('#btnFooterResume').onclick=openModal;
-$('#btnCloseResume').onclick=closeModal;
+var btnFooter=$('#btnFooterResume');if(btnFooter)btnFooter.onclick=openModal;
+var btnClose=$('#btnCloseResume');if(btnClose)btnClose.onclick=closeModal;
 modal.onclick=function(e){if(e.target===modal)closeModal()};
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&modal.classList.contains('open'))closeModal()});
 
