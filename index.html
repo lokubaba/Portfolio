@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lokesh Deswal | Product Manager</title>
+<meta name="description" content="Portfolio of Lokesh Deswal — Product Manager with 10+ years across PropTech, Enterprise SaaS, and AI Workflows. IIT Guwahati alumnus.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f8fa;--fg:#10141b;--mute:#5d6572;--line:#dfe3e9;--card:#fff;--acc:#2f4bff;--accfg:#fff;--soft:rgba(47,75,255,.08);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c1016;--fg:#eef1f6;--mute:#98a2b3;--line:#222a36;--card:#131923;--acc:#8ea2ff;--accfg:#0c1016;--soft:rgba(142,162,255,.1)}}
+:root[data-theme="dark"]{--bg:#0c1016;--fg:#eef1f6;--mute:#98a2b3;--line:#222a36;--card:#131923;--acc:#8ea2ff;--accfg:#0c1016;--soft:rgba(142,162,255,.1)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 17px/1.7 Manrope,system-ui,sans-serif;transition:background .4s,color .4s}
+h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:400;line-height:1.1;margin:0;letter-spacing:-.01em}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+h2{font-size:clamp(2rem,5vw,3.1rem);margin-bottom:12px}
+.lead{color:var(--mute);max-width:60ch;margin:0 0 36px}
+#bar{position:fixed;top:0;left:0;height:3px;width:100%;background:var(--acc);transform-origin:0 50%;transform:scaleX(0);z-index:20}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;gap:18px;height:60px;overflow-x:auto;white-space:nowrap}
+nav b{font:500 1.25rem Newsreader,serif;margin-right:auto}
+nav a{color:var(--mute);text-decoration:none;font-size:.92rem;padding:4px 0;border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
+nav a:hover,nav a.on{color:var(--fg);border-color:var(--acc)}
+#theme{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:99px;width:34px;height:34px;cursor:pointer;flex:none;font-size:1rem}
+a:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.hero{position:relative;padding:120px 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(520px circle at var(--mx,70%) var(--my,30%),var(--soft),transparent 70%);pointer-events:none}
+.hero .wrap{position:relative}
+.hero small{color:var(--mute);font-size:1rem}
+.hero h1{font-size:clamp(2.6rem,8vw,5.4rem);margin:14px 0 24px;max-width:15ch}
+.hero h1 span{display:inline-block;opacity:0;transform:translateY(24px);animation:up .8s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--i)*90ms + 150ms)}
+@keyframes up{to{opacity:1;transform:none}}
+.hero p{max-width:46ch;color:var(--mute);font-size:1.1rem;margin:0 0 30px}
+.btn{display:inline-block;padding:12px 22px;border-radius:99px;border:1px solid var(--fg);color:var(--fg);text-decoration:none;font-weight:500;font-size:.95rem;margin:0 10px 10px 0;transition:transform .2s,background .2s,color .2s;cursor:pointer;background:transparent;font-family:inherit}
+.btn:hover{transform:translateY(-2px)}
+.btn.main{background:var(--acc);border-color:var(--acc);color:var(--accfg)}
+.btn-sm{padding:7px 16px;font-size:.85rem;margin:0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:0;margin-top:64px;border-top:1px solid var(--line)}
+.stats div{padding:22px 16px 0 0}
+.stats b{display:block;font:400 2.8rem Newsreader,serif;line-height:1}
+.stats span{color:var(--mute);font-size:.88rem}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.rv.in{opacity:1;transform:none}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;transition:border-color .25s,transform .25s}
+.card:hover{border-color:var(--acc)}
+.grid{display:grid;gap:16px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(290px,1fr))}
+.tl{position:relative;margin:0;padding:0 0 0 34px;list-style:none}
+.tl::before,.tl::after{content:"";position:absolute;left:6px;top:8px;width:2px;background:var(--line);bottom:8px}
+.tl::after{background:var(--acc);bottom:auto;height:calc((100% - 16px)*var(--p,0))}
+.tl li{position:relative;padding-bottom:34px;opacity:.4;transition:opacity .4s}
+.tl li.on{opacity:1}
+.tl li::before{content:"";position:absolute;left:-34px;top:8px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:2px solid var(--line);transition:all .4s}
+.tl li.on::before{border-color:var(--acc);background:var(--acc)}
+.tl h3{font-size:1.45rem}
+.tl small{color:var(--mute);display:block;font-size:.85rem}
+.feat{margin-top:20px;background:var(--soft);border-color:transparent}
+.feat h3{font-size:1.7rem;margin-bottom:8px}
+.dot{display:inline-flex;align-items:center;gap:7px;font-size:.82rem;color:var(--mute);margin-bottom:8px}
+.dot::before{content:"";width:8px;height:8px;border-radius:50%;background:#2fb26b}
+.dot.wip::before{background:#e0a21a}
+.dot.built::before{background:var(--acc)}
+.tool{width:100%;text-align:left;font:inherit;color:inherit;cursor:pointer}
+.tool h3{font-size:1.4rem;display:flex;justify-content:space-between;gap:10px}
+.tool h3 i{font-style:normal;color:var(--acc);transition:transform .3s}
+.tool.open h3 i{transform:rotate(45deg)}
+.more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s ease}
+.tool.open .more{grid-template-rows:1fr}
+.more>div{overflow:hidden;color:var(--mute);font-size:.95rem}
+.more p{margin:10px 0 0}
+.tabs{display:flex;gap:6px;overflow-x:auto;border-bottom:1px solid var(--line);margin-bottom:28px}
+.tabs button{background:none;border:0;border-bottom:2px solid transparent;color:var(--mute);font:500 .95rem Manrope,sans-serif;padding:12px 14px;cursor:pointer;white-space:nowrap;transition:color .2s}
+.tabs button[aria-selected="true"]{color:var(--fg);border-color:var(--acc)}
+.panel{animation:fade .45s ease}
+.panel[hidden]{display:none}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.bars{display:grid;gap:10px;margin:6px 0 20px}
+.bar{display:grid;grid-template-columns:minmax(150px,250px) 1fr 48px;gap:12px;align-items:center;font-size:.9rem}
+.bar i{display:block;height:14px;border-radius:99px;background:var(--line);overflow:hidden}
+.bar b{display:block;height:100%;width:0;border-radius:99px;background:var(--mute);transition:width 1.1s cubic-bezier(.2,.7,.2,1)}
+.bar.top b{background:var(--acc)}
+.bar span:last-child{text-align:right;color:var(--mute)}
+.chipset{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:18px}
+.chipset button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:99px;padding:8px 16px;font:500 .9rem Manrope,sans-serif;cursor:pointer;transition:all .2s}
+.chipset button[aria-pressed="true"]{background:var(--acc);border-color:var(--acc);color:var(--accfg)}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.ba .card:last-child{border-color:var(--acc)}
+.ba h3{font-size:1.1rem;color:var(--mute);margin-bottom:6px;font-family:Manrope,sans-serif;font-weight:600}
+.calc label{display:grid;grid-template-columns:150px 1fr 90px;gap:12px;align-items:center;margin:12px 0;font-size:.92rem}
+.calc output{text-align:right;font-weight:600}
+input[type=range]{width:100%;accent-color:var(--acc)}
+.res{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:16px;margin-top:22px}
+.res b{display:block;font:400 2.3rem Newsreader,serif;color:var(--acc)}
+.res span{color:var(--mute);font-size:.85rem}
+.note{font-size:.88rem;color:var(--mute);margin-top:22px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:8px 18px;font-size:.93rem;transition:all .2s;cursor:default}
+.chips span:hover{background:var(--acc);color:var(--accfg);border-color:var(--acc);transform:translateY(-3px)}
+footer{padding:96px 0;border-top:1px solid var(--line)}
+footer h2{font-size:clamp(2.2rem,6vw,3.8rem);max-width:14ch}
+
+/* Modal Styling */
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);z-index:100;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease}
+.modal-overlay.open{opacity:1;visibility:visible}
+.modal-card{background:var(--card);border:1px solid var(--line);border-radius:16px;width:100%;max-width:880px;max-height:90vh;display:flex;flex-direction:column;box-shadow:0 24px 60px rgba(0,0,0,.35);transform:translateY(16px);transition:transform .25s cubic-bezier(.16,1,.3,1);overflow:hidden}
+.modal-overlay.open .modal-card{transform:translateY(0)}
+.modal-header{padding:16px 24px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:12px;background:var(--card);flex-wrap:wrap}
+.modal-header h3{font:500 1.25rem Newsreader,serif;margin:0}
+.modal-actions{display:flex;align-items:center;gap:8px}
+.modal-body{padding:28px 32px;overflow-y:auto;font-size:.95rem;line-height:1.7;color:var(--fg)}
+.modal-close{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:99px;width:32px;height:32px;cursor:pointer;font-size:1rem;display:inline-flex;align-items:center;justify-content:center;transition:background .2s}
+.modal-close:hover{background:var(--line)}
+.ats-doc h1{font:700 1.7rem Newsreader,Georgia,serif;letter-spacing:-.01em;margin:0 0 4px}
+.ats-subtitle{color:var(--acc);font-weight:600;font-size:1.05rem;margin-bottom:6px}
+.ats-meta{color:var(--mute);font-size:.9rem;margin-bottom:20px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.ats-sec{font-family:Manrope,sans-serif;font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);margin:24px 0 10px;padding-bottom:4px;border-bottom:1px solid var(--line)}
+.ats-role{display:flex;justify-content:space-between;align-items:baseline;font-weight:600;margin-top:14px}
+.ats-role span:last-child{color:var(--mute);font-size:.88rem;font-weight:400}
+.ats-company{color:var(--acc);font-weight:500;font-size:.92rem;margin-bottom:6px}
+.ats-list{margin:6px 0 16px 18px;padding:0}
+.ats-list li{margin-bottom:6px;color:var(--fg);font-size:.92rem}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(30px);background:var(--fg);color:var(--bg);padding:10px 20px;border-radius:99px;font-size:.88rem;font-weight:500;opacity:0;visibility:hidden;transition:all .3s ease;z-index:120;box-shadow:0 10px 30px rgba(0,0,0,.3)}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1;visibility:visible}
+
+@media (max-width:700px){.ba{grid-template-columns:1fr}.calc label{grid-template-columns:1fr 1fr}.calc input{grid-column:1/-1;order:3}.bar{grid-template-columns:1fr 1fr 44px}section{padding:70px 0}.modal-body{padding:20px 18px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.hero h1 span{opacity:1;transform:none}html{scroll-behavior:auto}}
+
+@media print{
+  body *{visibility:hidden}
+  #resumeModal,#resumeModal *{visibility:visible}
+  #resumeModal{position:absolute;left:0;top:0;width:100%;height:auto;background:#fff!important;color:#000!important;padding:0;margin:0}
+  .modal-card{border:none!important;box-shadow:none!important;max-width:100%!important;max-height:none!important;overflow:visible!important}
+  .modal-header,.modal-actions,#bar,nav,footer,#theme,.toast{display:none!important}
+  .modal-body{padding:0!important;color:#000!important}
+  .ats-sec{color:#444!important;border-color:#ccc!important}
+  .ats-company{color:#111!important}
+  .ats-role span:last-child{color:#555!important}
+}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<nav><div class="wrap"><b>Lokesh Deswal</b><a href="#journey">Journey</a><a href="#work">Work</a><a href="#capstone">Capstone</a><a href="#skills">Skills</a><a href="#contact">Contact</a><button class="btn btn-sm" id="btnNavResume">Resume</button><button id="theme" aria-label="Toggle light and dark theme">◐</button></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<small>Lokesh Deswal, Product Manager</small>
+<h1 id="h1">I turn customer problems into products people use.</h1>
+<p>Ten years building businesses, and now products across PropTech and enterprise SaaS. I start with discovery, agree on the right experience, and ship the smallest version that proves it.</p>
+<a class="btn main" href="#capstone">Explore the Porter capstone</a><a class="btn" href="https://viewer.zentravisuals.com" target="_blank" rel="noopener">Open a live product</a><button class="btn" id="btnHeroResume">View ATS Resume</button>
+<div class="stats">
+<div><b data-n="20" data-s="+">0</b><span>enterprise customers interviewed</span></div>
+<div><b data-n="300" data-s="+">0</b><span>end users researched</span></div>
+<div><b data-n="32" data-s="%">0</b><span>faster delivery timelines</span></div>
+<div><b data-n="4" data-s=" mo">0</b><span>to core MVP, against a 6 month estimate</span></div>
+</div>
+</div></header>
+
+<section id="journey"><div class="wrap">
+<h2 class="rv">The journey so far</h2>
+<p class="lead rv">Each role added something a product manager needs: how customers decide, how teams ship, and how a business runs.</p>
+<ol class="tl" id="tl">
+<li><small>2016 to 2023</small><h3>Founder and business head, Shutter Diaries</h3>Built a services business to ₹6Cr+ across 350+ clients, owning P&amp;L, sales, and operations.</li>
+<li><small>2020 to 2023</small><h3>Marketing head, Relata</h3>Built go-to-market that doubled qualified B2B leads, alongside Product and Sales.</li>
+<li><small>2023 to 2025</small><h3>Product and experience lead, Relata</h3>Ran discovery, wrote PRDs with Engineering, and helped cut delivery timelines by 32%.</li>
+<li><small>2025 to now</small><h3>Business head, Zentra Visuals</h3>Own a new vertical and build internal tools that remove team bottlenecks.</li>
+</ol>
+</div></section>
+
+<section id="work" style="padding-top:0"><div class="wrap">
+<h2 class="rv">Selected work</h2>
+<p class="lead rv">One enterprise product story, and the tools I built for real friction. Tap a tool to read more.</p>
+<div class="card feat rv"><div class="dot">Shipped at Relata</div><h3>House of Hiranandani: a digital sales gallery that scaled to other developers</h3>
+<p>Hiranandani’s sales teams sold large projects with static images and walkthrough videos, switching between files for every buyer question about units, views, and nearby facilities. I proposed replacing that with one digital sales gallery in four parts: Neighbourhood, Inventory, Amenities, and Collateral. I designed the maps, zones, and navigation flows, prototyped it for the client, and worked with Product and Engineering on scope. After agreeing on an MVP, core functionality shipped in about four months against a six-month estimate. Sales-team usage went up. The gallery was built for four Hiranandani projects, including developments with 13+ towers, and the same product was then implemented for other developers, including Century, Brigade, Vasavi, Ankura, and Supreme.</p></div>
+<div class="grid g2" style="margin-top:16px">
+<button class="card tool rv"><div class="dot">Live</div><h3>360° Review and Feedback Viewer <i>+</i></h3><div class="more"><div><p>Clients couldn’t give precise feedback on panoramic images. Now they review drafts and comment on specific parts, and project data stays in our own environment.</p><p><a href="https://viewer.zentravisuals.com" target="_blank" rel="noopener" style="color:var(--acc)">Open the viewer</a></p></div></div></button>
+<button class="card tool rv"><div class="dot">Live</div><h3>360° Image Editor <i>+</i></h3><div class="more"><div><p>A workflow for overlays, masked areas, and outlines on 360° and superimposed images, which general-purpose editors handled poorly for our team.</p><p><a href="https://editor.zentravisuals.com" target="_blank" rel="noopener" style="color:var(--acc)">Open the editor</a></p></div></div></button>
+<button class="card tool rv"><div class="dot built">Built</div><h3>Smart File Management <i>+</i></h3><div class="more"><div><p>One central system to find project files across folders, computers, drives, and archives, replacing manual searching.</p></div></div></button>
+<button class="card tool rv"><div class="dot">Live</div><h3>Large-file Drive Tools <i>+</i></h3><div class="more"><div><p>Moves big datasets without manual splitting, and lets clients upload files straight into team-accessible storage.</p><p><a href="https://portal.zentravisuals.com" target="_blank" rel="noopener" style="color:var(--acc)">Open the client upload portal</a></p></div></div></button>
+<button class="card tool rv"><div class="dot wip">In progress</div><h3>Local-first Team Drive <i>+</i></h3><div class="more"><div><p>A self-hosted file space with private storage per person, sharing with colleagues, and expiring links. Scoping the MVP and permissions now.</p></div></div></button>
+</div>
+</div></section>
+
+<section id="capstone" style="padding-top:0"><div class="wrap">
+<h2 class="rv">Capstone: Porter</h2>
+<p class="lead rv">An Airtribe PM Launchpad case study on lifting first-trip conversion for Porter’s first-time individual customers, from 41% to 58%. It is coursework built from my own research, not a Porter engagement.</p>
+<div class="tabs" role="tablist" id="tabs">
+<button role="tab" aria-selected="true" data-t="p0">Research</button><button role="tab" aria-selected="false" data-t="p1">Barriers</button><button role="tab" aria-selected="false" data-t="p2">Solutions</button><button role="tab" aria-selected="false" data-t="p3">Rollout</button><button role="tab" aria-selected="false" data-t="p4">Impact</button></div>
+
+<div class="panel" id="p0"><div class="grid g2">
+<div class="card"><h3>Five methods, one funnel view</h3><p style="color:var(--mute)">A 12-person survey, 8 follow-up interviews, a full app and web flow teardown, and a benchmark of 7 competitors across 8 feature areas.</p></div>
+<div class="card"><h3>The finding</h3><p style="color:var(--mute)">Trust, not the physical service, breaks first-trip conversion. Three of 12 respondents independently said the vehicle arrived on a different day than promised, and damage, delays, support, and hidden charges recur across every competitor.</p></div>
+<div class="card"><h3>The anxious first-time renter</h3><p style="color:var(--mute)">Has never booked a mover. Needs clear pricing, proof the provider will show up, and visibility after paying.</p></div>
+<div class="card"><h3>The budget-conscious shopper</h3><p style="color:var(--mute)">Compares 3 or 4 options and needs an itemised price they can compare, not one opaque total.</p></div></div></div>
+
+<div class="panel" id="p1" hidden><p style="color:var(--mute);margin-top:0">RICE narrowed eight drop-off themes to two primary barriers, shown in blue.</p>
+<div class="bars" id="bars"></div>
+<div class="grid g2"><div class="card"><h3>1. An untrustworthy quote step</h3><p style="color:var(--mute)">The app hides the breakdown behind a tap-through, and the web gives no price without a 24 to 48 hour callback.</p></div>
+<div class="card"><h3>2. Blackout after payment</h3><p style="color:var(--mute)">No driver, vehicle, or status exactly when “will they show up” anxiety peaks.</p></div></div></div>
+
+<div class="panel" id="p2" hidden><p style="color:var(--mute);margin-top:0">Two additive screens, not a redesign. Pick a stage of the journey to see what changes.</p>
+<div class="chipset" id="stages"></div>
+<div class="ba"><div class="card"><h3>Today</h3><p id="today" style="margin:0"></p></div><div class="card"><h3>With the change</h3><p id="after" style="margin:0"></p></div></div>
+<p class="note" style="margin-top:16px">Solution 1, itemised price with a Price-Lock badge, scored RICE 0.425. Solution 2, driver and vehicle reveal with milestone status, scored 0.298. Both use data Porter already holds.</p></div>
+
+<div class="panel" id="p3" hidden><p style="color:var(--mute);margin-top:0">Gated cohorts in Bengaluru and Pune first. Select a stage to see who is in it and what must be true to move on.</p>
+<div class="chipset" id="cohorts"></div>
+<div class="card"><h3 id="cwho" style="margin-bottom:6px"></h3><p id="cgate" style="margin:0;color:var(--mute)"></p></div></div>
+
+<div class="panel" id="p4" hidden><div class="card calc"><h3>Business impact model</h3><p style="color:var(--mute);margin-top:6px">Defaults match the capstone: 100,000 monthly users at quote stage, 41% to 58% conversion, ₹8,000 average order, and about a 17% platform take rate. Move the sliders to test it.</p>
+<label>Monthly quote-stage users<input type="range" id="u" min="20000" max="300000" step="5000" value="100000"><output id="uo"></output></label>
+<label>Current conversion<input type="range" id="c0" min="20" max="60" value="41"><output id="c0o"></output></label>
+<label>Target conversion<input type="range" id="c1" min="25" max="80" value="58"><output id="c1o"></output></label>
+<label>Average order value<input type="range" id="a" min="2000" max="15000" step="500" value="8000"><output id="ao"></output></label>
+<div class="res"><div><b id="r1">0</b><span>extra trips a month</span></div><div><b id="r2">0</b><span>extra monthly GMV, in ₹ crore</span></div><div><b id="r3">0</b><span>extra monthly platform revenue, in ₹ crore</span></div></div></div>
+<p class="note">North Star: first-trip completion rate. Guardrails: no-show rate, 30 and 90 day rebooking, fare disputes and damage claims, first-timer CSAT. RICE scores are directional estimates from a small sample, and these impact figures are an illustrative model, not a forecast.</p></div>
+</div></section>
+
+<section id="skills" style="padding-top:0"><div class="wrap">
+<h2 class="rv">Skills</h2>
+<p class="lead rv">B.Tech Mechanical Engineering with a minor in Product Design from IIT Guwahati, and AI Product Management at Airtribe (in progress).</p>
+<div class="chips rv"><span>Customer discovery</span><span>PRDs and user stories</span><span>MVP scoping</span><span>RICE prioritization</span><span>User journey mapping</span><span>Usability testing</span><span>JTBD workshops</span><span>GA4, Tableau, Looker</span><span>Enterprise SaaS</span><span>Go-to-market</span><span>AI workflow automation</span><span>Cross-functional leadership</span></div>
+<div class="grid g2" style="margin-top:28px">
+<div class="card rv"><h3 style="font-size:1.35rem">Business owner</h3><p style="margin:8px 0 0;color:var(--mute);font-size:.95rem">Founded and scaled Shutter Diaries to ₹6Cr+ across 350+ clients, owning P&amp;L, hiring, sales, and operations for seven years.</p></div>
+<div class="card rv"><h3 style="font-size:1.35rem">Team leader</h3><p style="margin:8px 0 0;color:var(--mute);font-size:.95rem">Lead teams of architects, designers, project managers, and vendors at Zentra Visuals, with SOPs that keep delivery on schedule.</p></div>
+<div class="card rv"><h3 style="font-size:1.35rem">Multi-team coordinator</h3><p style="margin:8px 0 0;color:var(--mute);font-size:.95rem">Worked at Relata across the CPO, Engineering, Design, Sales, and executives, and communicated agreed timelines to enterprise clients.</p></div>
+<div class="card rv"><h3 style="font-size:1.35rem">Hands-on builder</h3><p style="margin:8px 0 0;color:var(--mute);font-size:.95rem">Design flows, prototype, and build internal tools myself, so I know what each ask costs in real work.</p></div>
+</div>
+<p class="rv" style="margin:28px 0 0;max-width:60ch;font-family:Newsreader,Georgia,serif;font-size:1.35rem;line-height:1.35">I’ve been the owner, the team lead, the link between teams, and the one doing the work, so I plan with the full picture.</p>
+</div></section>
+
+<footer id="contact"><div class="wrap"><h2 class="rv">Let’s build something customers trust.</h2>
+<p class="lead rv" style="margin-top:14px">Hiring for an Associate or Senior Product Manager role? I’d love to talk.</p>
+<a class="btn main" href="mailto:d.lokesh45@gmail.com">Email me</a><a class="btn" href="https://linkedin.com/in/lokeshdeswal" target="_blank" rel="noopener">LinkedIn</a><button class="btn" id="btnFooterResume">View Resume</button></div></footer>
+
+<!-- ==========================================================================
+     RESUME MODAL & ATS EXPORT
+     ========================================================================== -->
+<div id="resumeModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="resumeTitle">
+  <div class="modal-card">
+    <div class="modal-header">
+      <h3 id="resumeTitle">Lokesh Deswal — Product Manager Resume</h3>
+      <div class="modal-actions">
+        <button id="btnCopyResume" class="btn btn-sm">Copy Plain Text</button>
+        <button id="btnPrintResume" class="btn btn-sm">Print / Save PDF</button>
+        <button id="btnCloseResume" class="modal-close" aria-label="Close modal">✕</button>
+      </div>
+    </div>
+    <div class="modal-body" id="resumeBody">
+      <div class="ats-doc">
+        <h1>LOKESH DESWAL</h1>
+        <div class="ats-subtitle">Product Manager | Enterprise SaaS, PropTech & AI Workflows</div>
+        <div class="ats-meta">
+          Pune, Maharashtra, India • +91-9738920466 • <a href="mailto:d.lokesh45@gmail.com" style="color:inherit">d.lokesh45@gmail.com</a> • <a href="https://linkedin.com/in/lokeshdeswal" target="_blank" rel="noopener" style="color:inherit">linkedin.com/in/lokeshdeswal</a>
+        </div>
+
+        <div class="ats-sec">Professional Summary</div>
+        <p>Results-driven <strong>Product Manager</strong> with 10+ years of cross-functional leadership spanning product discovery, MVP scoping, user journey optimization, and enterprise digital solutions across PropTech and B2B SaaS. Proven track record of translating complex enterprise sales and operational bottlenecks into high-adoption digital products—including architecting an enterprise PropTech sales platform delivered as an MVP 2 months ahead of schedule and scaling it across 13+ towers for House of Hiranandani. Built and shipped 3 production SaaS tools and deployed internal AI-assisted workflows that compressed operational turnaround times by 30%–35%. Graduate of <strong>IIT Guwahati</strong> (B.Tech Mechanical Engineering, Minor in Product Design) with advanced Product Management specialization from Airtribe.</p>
+
+        <div class="ats-sec">Core Skills</div>
+        <ul class="ats-list">
+          <li><strong>Product Strategy & Scoping:</strong> Product Discovery, Customer Interviews, PRD & User Story Writing, MVP Scoping, RICE Prioritization, Build vs. Buy Analysis, Roadmap Planning.</li>
+          <li><strong>Execution & Delivery:</strong> Agile/Scrum Sprints, Cross-Functional Leadership (Engineering, Design, Enterprise Sales), Technical Feasibility Coordination, Release Management.</li>
+          <li><strong>Analytics & Growth:</strong> Funnel Drop-off Analysis, User Journey Mapping, Jobs-To-Be-Done (JTBD), North Star & Guardrail Metrics, GA4, Tableau, Looker.</li>
+          <li><strong>Domain Expertise:</strong> Enterprise B2B SaaS, PropTech, Spatial & 360° Systems, Workflow Automation, AI-Assisted Operations.</li>
+        </ul>
+
+        <div class="ats-sec">Professional Experience</div>
+
+        <div class="ats-role"><span>Business Head / Product & Operations Lead</span> <span>Jan 2025 – Present</span></div>
+        <div class="ats-company">Zentra Visuals • Pune, India</div>
+        <ul class="ats-list">
+          <li>Built and scaled an enterprise visualization vertical from ground zero, owning product strategy, delivery systems, pricing models, and SLA benchmarks.</li>
+          <li>Conducted discovery interviews across cross-functional internal stakeholders (production engineers, architects, client PMs) to diagnose production bottlenecks, leading to the deployment of 4 specialized internal tools.</li>
+          <li><strong>360° Review & Annotation Viewer (viewer.zentravisuals.com):</strong> Streamlined spatial draft feedback directly on-cloud, eliminating multi-day back-and-forth review cycles and safeguarding proprietary CAD data strictly in-house.</li>
+          <li><strong>360° Image & Superimposition Editor (editor.zentravisuals.com):</strong> Designed proprietary web canvas tooling for spherical masking and overlays, slashing manual asset turnaround by 40%.</li>
+          <li><strong>Client Data Ingestion & Project Portal (portal.zentravisuals.com):</strong> Product-managed an onboarding and asset ingestion platform built for getting data from clients directly, eliminating email/WeTransfer friction and automating multi-gigabyte uploads.</li>
+          <li><strong>Local-First Team Drive:</strong> Authored PRD and technical requirements for zero-trust private vaults, colleague sharing, and expiring links (currently in MVP development).</li>
+          <li>Introduced AI-assisted production workflows that compressed turnaround times by 30% while maintaining zero defect slippage.</li>
+        </ul>
+
+        <div class="ats-role"><span>Product & Experience Lead (Vistaire / Immerse)</span> <span>Apr 2023 – Dec 2025</span></div>
+        <div class="ats-company">Relata • Pune, India</div>
+        <ul class="ats-list">
+          <li>Partnered directly with the CPO, VP of Engineering, Design, and Sales to evolve Relata’s enterprise PropTech sales enablement platform.</li>
+          <li><strong>House of Hiranandani Enterprise Win:</strong> Uncovered critical sales friction where sales reps were juggling 10+ tabs/PDFs/videos to pitch properties, forcing buyers to blindly "imagine" views and layouts.</li>
+          <li>Formulated the product vision for a unified 4-pillar digital journey (Neighbourhood, Inventory, Amenities, Collateral); authored detailed PRDs, wireframes, and navigational user journeys.</li>
+          <li>Re-scoped an initial 6-month development estimate into a lean 4-month MVP through RICE prioritization, releasing core value 60 days early with subsequent 2-month phased enhancements.</li>
+          <li>Shipped the platform to enable sales reps to pitch via 1 laptop and 1 URL; drove rapid sales adoption and expanded deployment across 4 major residential/commercial estates spanning 13+ towers.</li>
+          <li>Led discovery with 20+ enterprise real-estate developers and 300+ end-users, driving workflow automation that cut delivery timelines by 32%.</li>
+        </ul>
+
+        <div class="ats-role"><span>Marketing & GTM Head</span> <span>Aug 2020 – Mar 2023</span></div>
+        <div class="ats-company">Relata • Pune, India</div>
+        <ul class="ats-list">
+          <li>Formulated product-led growth (PLG) and B2B go-to-market strategies that doubled qualified enterprise inbound lead generation.</li>
+          <li>Partnered with Product and Sales to align customer market needs with platform capabilities; supported enterprise onboarding and contract renewals.</li>
+        </ul>
+
+        <div class="ats-role"><span>Founder & Business Head</span> <span>Jun 2016 – Mar 2023</span></div>
+        <div class="ats-company">Shutter Diaries • India</div>
+        <ul class="ats-list">
+          <li>Founded and scaled a digital services business to ₹6Cr+ in cumulative revenue across 350+ corporate/individual clients and 1,000+ completed projects with full P&L ownership.</li>
+          <li>Engineered delivery systems and automated workflows that cut client turnaround time by 35% and drove a 63% repeat business rate.</li>
+        </ul>
+
+        <div class="ats-sec">Education & Certifications</div>
+        <div class="ats-role"><span>B.Tech in Mechanical Engineering (Minor in Product Design)</span> <span>IIT Guwahati</span></div>
+        <div class="ats-role" style="margin-top:6px"><span>AI & Modern Product Management Certification</span> <span>Airtribe Launchpad</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast">Plain text copied to clipboard!</div>
+
+<script>
+(function(){
+var d=document,root=d.documentElement;root.classList.add('js');
+var $=function(s){return d.querySelector(s)},$$=function(s){return [].slice.call(d.querySelectorAll(s))};
+
+/* hero headline: word-by-word reveal */
+var h=$('#h1');h.innerHTML=h.textContent.split(' ').map(function(w,i){return '<span style="--i:'+i+'">'+w+'</span>'}).join(' ');
+
+/* spotlight follows pointer */
+var hero=$('.hero');hero.addEventListener('pointermove',function(e){var r=hero.getBoundingClientRect();hero.style.setProperty('--mx',(e.clientX-r.left)+'px');hero.style.setProperty('--my',(e.clientY-r.top)+'px')});
+
+/* theme toggle */
+$('#theme').onclick=function(){var dark=root.dataset.theme?root.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;root.dataset.theme=dark?'light':'dark'};
+
+/* counters */
+function count(el){var n=+el.dataset.n,s=el.dataset.s,t0=null;(function f(t){t0=t0||t;var p=Math.min((t-t0)/1300,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(f)})(performance.now())}
+
+/* reveal on scroll */
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.15});
+$$('.rv').forEach(function(el,i){el.style.transitionDelay=(i%3)*80+'ms';io.observe(el)});
+var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){$$('[data-n]').forEach(count);cio.disconnect()}})},{threshold:.4});cio.observe($('.stats'));
+
+/* scroll progress, timeline, active nav */
+var tl=$('#tl'),lis=$$('#tl li'),links=$$('nav a'),secs=links.map(function(a){return $(a.getAttribute('href'))});
+function onScroll(){var st=scrollY,max=root.scrollHeight-innerHeight;$('#bar').style.transform='scaleX('+(max>0?st/max:0)+')';
+var r=tl.getBoundingClientRect(),p=Math.min(Math.max((innerHeight*.6-r.top)/r.height,0),1);tl.style.setProperty('--p',p);
+lis.forEach(function(li,i){li.classList.toggle('on',p>=(i/lis.length)+.02||(i===0&&p>0))});
+var cur=-1;secs.forEach(function(s,i){if(s.getBoundingClientRect().top<innerHeight*.35)cur=i});links.forEach(function(a,i){a.classList.toggle('on',i===cur)})}
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+
+/* expandable tools */
+$$('.tool').forEach(function(b){b.addEventListener('click',function(e){if(e.target.tagName==='A')return;b.classList.toggle('open')})});
+
+/* capstone data */
+var rice=[['Quote needs human intervention',.266,1],['No visibility after payment',.163,1],['Fear of item damage',.153],['Web quote needs 24 to 48h callback',.14],['Vehicle and capacity uncertainty',.135],['No-show and reliability fears',.109],['General in-app confusion',.099],['Insurance uncertainty',.096]];
+$('#bars').innerHTML=rice.map(function(r){return '<div class="bar'+(r[2]?' top':'')+'"><span>'+r[0]+'</span><i><b data-w="'+(r[1]/.266*100)+'"></b></i><span>'+r[1].toFixed(3)+'</span></div>'}).join('');
+var stages=[['Quote','Price hidden behind a tap-through, with no price-lock.','An inline itemised breakdown and a Price-Lock badge, shown at the exact moment of decision.'],['Payment','No recap and no next-step confirmation.','The Price-Lock badge carries through as a visible confirmation.'],['Pre-move wait','Total blackout: no driver, no vehicle, no status.','Driver name, photo, vehicle, and ETA appear the moment a partner is assigned.'],['Move day','Only a start and end line, with no stage status.','Milestone status: packed, loaded, in transit, arrived.']];
+var cohorts=[['Beta','Employees and a small panel of recent first-timers.','The price breakdown and driver reveal are understood, with no confusion.'],['10% holdout','Randomly assigned in Bengaluru and Pune.','Conversion beats the control group with no guardrail regression.'],['50% expansion','Same two cities.','The conversion lift is sustained for two or more weeks.'],['Corporate pilot','5 to 10 partnered HR contacts.','Positive feedback validates investing in a web portal.'],['Full rollout','100% of users plus a third city.','The business impact model holds within 20% at city scale.']];
+function chips(id,data,fn){var box=$(id);box.innerHTML=data.map(function(x,i){return '<button aria-pressed="'+(i===0)+'">'+x[0]+'</button>'}).join('');var bs=[].slice.call(box.children);function pick(i){bs.forEach(function(b,j){b.setAttribute('aria-pressed',j===i)});fn(data[i])}bs.forEach(function(b,i){b.onclick=function(){pick(i)}});pick(0)}
+chips('#stages',stages,function(s){$('#today').textContent=s[1];$('#after').textContent=s[2]});
+chips('#cohorts',cohorts,function(c){$('#cwho').textContent=c[1];$('#cgate').textContent='To move on: '+c[2]});
+
+/* tabs */
+var tabs=$$('#tabs button');tabs.forEach(function(t){t.onclick=function(){tabs.forEach(function(x){x.setAttribute('aria-selected',x===t)});$$('.panel').forEach(function(p){p.hidden=p.id!==t.dataset.t});
+if(t.dataset.t==='p1'){$$('.bar b').forEach(function(b){b.style.width=0;requestAnimationFrame(function(){requestAnimationFrame(function(){b.style.width=b.dataset.w+'%'})})})}
+if(t.dataset.t==='p4')calc(true)}});
+
+/* calculator with tweened outputs */
+var cur={r1:0,r2:0,r3:0};
+function tween(id,to,fmt){var from=cur[id],t0=null;(function f(t){t0=t0||t;var p=Math.min((t-t0)/500,1),v=from+(to-from)*(1-Math.pow(1-p,3));$('#'+id).textContent=fmt(v);if(p<1)requestAnimationFrame(f);else cur[id]=to})(performance.now())}
+function calc(){var u=+$('#u').value,a=+$('#c0').value,b=+$('#c1').value,v=+$('#a').value;if(b<a){b=a;$('#c1').value=a}
+$('#uo').textContent=u.toLocaleString('en-IN');$('#c0o').textContent=a+'%';$('#c1o').textContent=b+'%';$('#ao').textContent='₹'+v.toLocaleString('en-IN');
+var trips=u*(b-a)/100,gmv=trips*v/1e7;
+tween('r1',trips,function(x){return Math.round(x).toLocaleString('en-IN')});tween('r2',gmv,function(x){return '₹'+x.toFixed(1)});tween('r3',gmv*.17,function(x){return '₹'+x.toFixed(1)})}
+['#u','#c0','#c1','#a'].forEach(function(s){$(s).addEventListener('input',calc)});calc();
+
+/* Resume Modal Logic */
+var modal=$('#resumeModal');
+function openModal(){modal.classList.add('open');document.body.style.overflow='hidden'}
+function closeModal(){modal.classList.remove('open');document.body.style.overflow=''}
+$('#btnNavResume').onclick=openModal;
+$('#btnHeroResume').onclick=openModal;
+$('#btnFooterResume').onclick=openModal;
+$('#btnCloseResume').onclick=closeModal;
+modal.onclick=function(e){if(e.target===modal)closeModal()};
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&modal.classList.contains('open'))closeModal()});
+
+/* Print Resume */
+$('#btnPrintResume').onclick=function(){window.print()};
+
+/* Copy Plain Text Resume */
+var toast=$('#toast');
+function showToast(msg){toast.textContent=msg;toast.classList.add('show');setTimeout(function(){toast.classList.remove('show')},2800)}
+$('#btnCopyResume').onclick=function(){
+var plainText=`LOKESH DESWAL
+Product Manager | Enterprise SaaS, PropTech & AI Workflows
+Pune, Maharashtra, India • +91-9738920466 • d.lokesh45@gmail.com
+LinkedIn: linkedin.com/in/lokeshdeswal
+
+PROFESSIONAL SUMMARY
+Results-driven Product Manager with 10+ years of cross-functional leadership spanning product discovery, MVP scoping, user journey optimization, and enterprise digital solutions across PropTech and B2B SaaS. Proven track record of translating complex enterprise sales and operational bottlenecks into high-adoption digital products—including architecting an enterprise PropTech sales platform delivered as an MVP 2 months ahead of schedule and scaling it across 13+ towers for House of Hiranandani. Built and shipped 3 production SaaS tools and deployed internal AI-assisted workflows that compressed operational turnaround times by 30%–35%. Graduate of IIT Guwahati (B.Tech Mechanical Engineering, Minor in Product Design) with advanced Product Management specialization from Airtribe.
+
+CORE SKILLS
+- Product Strategy & Scoping: Product Discovery, Customer Interviews, PRD & User Story Writing, MVP Scoping, RICE Prioritization, Build vs. Buy Analysis, Roadmap Planning.
+- Execution & Delivery: Agile/Scrum Sprints, Cross-Functional Leadership (Engineering, Design, Enterprise Sales), Technical Feasibility Coordination, Release Management.
+- Analytics & Growth: Funnel Drop-off Analysis, User Journey Mapping, Jobs-To-Be-Done (JTBD), North Star & Guardrail Metrics, GA4, Tableau, Looker.
+- Domain Expertise: Enterprise B2B SaaS, PropTech, Spatial & 360° Systems, Workflow Automation, AI-Assisted Operations.
+
+PROFESSIONAL EXPERIENCE
+Business Head / Product & Operations Lead | Zentra Visuals (Jan 2025 – Present) | Pune, India
+- Built and scaled an enterprise visualization vertical from ground zero, owning product strategy, delivery systems, pricing models, and SLA benchmarks.
+- Conducted discovery interviews across cross-functional internal stakeholders to diagnose production bottlenecks, deploying 4 specialized internal tools: 360° Review Viewer (viewer.zentravisuals.com), 360° Image Editor (editor.zentravisuals.com), Client Data Ingestion Portal (portal.zentravisuals.com), and Local-First Team Drive.
+- Compressed turnaround times by 30% via AI-assisted production workflows.
+
+Product & Experience Lead (Vistaire / Immerse) | Relata (Apr 2023 – Dec 2025) | Pune, India
+- House of Hiranandani Enterprise Win: Uncovered sales friction where reps juggled 10+ tabs/PDFs/walkthroughs; formulated 4-pillar digital journey (Neighbourhood, Inventory, Amenities, Collateral).
+- Re-scoped initial 6-month estimate into a lean 4-month MVP via RICE prioritization, releasing core value 60 days early.
+- Shipped platform enabling reps to pitch via 1 laptop and 1 URL, scaling across 4 major estates and 13+ towers; expanded to Century, Brigade, Vasavi, Ankura, and Supreme.
+- Cut client delivery timelines by 32% across 20+ enterprise developers and 300+ end-users.
+
+Marketing & GTM Head | Relata (Aug 2020 – Mar 2023) | Pune, India
+- Doubled qualified inbound enterprise B2B sales pipeline in 18 months via product-led growth (PLG) strategies.
+
+Founder & Business Head | Shutter Diaries (Jun 2016 – Mar 2023) | India
+- Founded and scaled digital production enterprise to ₹6Cr+ cumulative revenue across 350+ clients and 1,000+ completed projects (63% repeat business rate).
+
+EDUCATION & CREDENTIALS
+- B.Tech in Mechanical Engineering (Minor in Product Design), IIT Guwahati
+- AI & Modern Product Management Certification, Airtribe Launchpad`;
+
+if(navigator.clipboard&&navigator.clipboard.writeText){
+  navigator.clipboard.writeText(plainText).then(function(){showToast('Plain text resume copied to clipboard!')}).catch(function(){showToast('Unable to copy to clipboard')});
+}else{
+  var ta=document.createElement('textarea');ta.value=plainText;document.body.appendChild(ta);ta.select();document.execCommand('copy');document.body.removeChild(ta);showToast('Plain text resume copied to clipboard!');
+}
+};
+})();
+</script>
+</body>
+</html>
