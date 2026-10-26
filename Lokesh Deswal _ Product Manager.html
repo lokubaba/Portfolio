@@ -100,15 +100,37 @@ input[type=range]{width:100%;accent-color:var(--acc)}
 .chips{display:flex;flex-wrap:wrap;gap:10px}
 .chips span{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:8px 18px;font-size:.93rem;transition:all .2s;cursor:default}
 .chips span:hover{background:var(--acc);color:var(--accfg);border-color:var(--acc);transform:translateY(-3px)}
-footer{padding:96px 0;border-top:1px solid var(--line)}
-footer h2{font-size:clamp(2.2rem,6vw,3.8rem);max-width:14ch}
+footer{padding:80px 0 36px;border-top:1px solid var(--line);position:relative;background:color-mix(in srgb,var(--card) 25%,var(--bg))}
+.footer-grid{display:grid;grid-template-columns:1.2fr .85fr;gap:48px;align-items:start}
+footer h2{font-size:clamp(1.95rem,3.4vw,2.95rem);max-width:32ch;line-height:1.2;text-wrap:balance;margin-bottom:0}
+footer .lead{max-width:52ch;text-wrap:pretty;line-height:1.6}
+.footer-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:28px}
+.footer-actions .btn{margin:0}
+.footer-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:0 8px 30px rgba(0,0,0,.04)}
+.contact-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.contact-kicker{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:var(--mute)}
+.status-indicator{display:inline-flex;align-items:center;gap:7px;font-size:.82rem;color:var(--mute);font-weight:600}
+.pulse-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#2fb26b;box-shadow:0 0 0 0 rgba(47,178,107,.5);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(47,178,107,.5)}70%{box-shadow:0 0 0 6px rgba(47,178,107,0)}100%{box-shadow:0 0 0 0 rgba(47,178,107,0)}}
+.contact-row{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-bottom:1px dashed var(--line);font-size:.88rem;gap:14px}
+.contact-row:last-child{border-bottom:0;padding-bottom:0}
+.contact-label{color:var(--mute);flex-shrink:0}
+.contact-val{color:var(--fg);font-weight:500;text-align:right}
+.contact-val a,.contact-row a.contact-val{color:var(--acc);text-decoration:none;transition:opacity .2s}
+.contact-val a:hover,.contact-row a.contact-val:hover{opacity:.8;text-decoration:underline}
+.footer-bottom{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:.85rem;color:var(--mute);flex-wrap:wrap;gap:12px}
+.footer-meta{display:flex;align-items:center;gap:8px}
+.meta-sep{opacity:.4}
+.back-to-top{color:var(--mute);text-decoration:none;font-weight:500;transition:color .2s;display:inline-flex;align-items:center;gap:4px}
+.back-to-top:hover{color:var(--acc)}
+@media (max-width:860px){.footer-grid{grid-template-columns:1fr;gap:36px}}
 @media (max-width:700px){.ba{grid-template-columns:1fr}.calc label{grid-template-columns:1fr 1fr}.calc input{grid-column:1/-1;order:3}.bar{grid-template-columns:1fr 1fr 44px}section{padding:70px 0}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv,.hero h1 span{opacity:1;transform:none}html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
 <div id="bar"></div>
-<nav><div class="wrap"><b>Lokesh Deswal</b><a href="#journey">Journey</a><a href="#work">Work</a><a href="#capstone">Capstone</a><a href="#skills">Skills</a><a href="#contact">Contact</a><button id="theme" aria-label="Toggle light and dark theme">◐</button></div></nav>
+<nav><div class="wrap"><b>Lokesh Deswal</b><a href="#capstone">Capstone</a><a href="#journey">Journey</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a><button id="theme" aria-label="Toggle light and dark theme">◐</button></div></nav>
 
 <header class="hero" id="top"><div class="wrap">
 <small>Lokesh Deswal, Product Manager</small>
@@ -123,32 +145,7 @@ footer h2{font-size:clamp(2.2rem,6vw,3.8rem);max-width:14ch}
 </div>
 </div></header>
 
-<section id="journey"><div class="wrap">
-<h2 class="rv">The journey so far</h2>
-<p class="lead rv">Each role added something a product manager needs: how customers decide, how teams ship, and how a business runs.</p>
-<ol class="tl" id="tl">
-<li><small>2016 to 2023</small><h3>Founder and business head, Shutter Diaries</h3>Built a services business to ₹6Cr+ across 350+ clients, owning P&amp;L, sales, and operations.</li>
-<li><small>2020 to 2023</small><h3>Marketing head, Relata</h3>Built go-to-market that doubled qualified B2B leads, alongside Product and Sales.</li>
-<li><small>2023 to 2025</small><h3>Product and experience lead, Relata</h3>Ran discovery, wrote PRDs with Engineering, and helped cut delivery timelines by 32%.</li>
-<li><small>2025 to now</small><h3>Business head, Zentra Visuals</h3>Own a new vertical and build internal tools that remove team bottlenecks.</li>
-</ol>
-</div></section>
-
-<section id="work" style="padding-top:0"><div class="wrap">
-<h2 class="rv">Selected work</h2>
-<p class="lead rv">One enterprise product story, and the tools I built for real friction. Tap a tool to read more.</p>
-<div class="card feat rv"><div class="dot">Shipped at Relata</div><h3>House of Hiranandani: a digital sales gallery that scaled to other developers</h3>
-<p>Hiranandani’s sales teams sold large projects with static images and walkthrough videos, switching between files for every buyer question about units, views, and nearby facilities. I proposed replacing that with one digital sales gallery in four parts: Neighbourhood, Inventory, Amenities, and Collateral. I designed the maps, zones, and navigation flows, prototyped it for the client, and worked with Product and Engineering on scope. After agreeing on an MVP, core functionality shipped in about four months against a six-month estimate. Sales-team usage went up. The gallery was built for four Hiranandani projects, including developments with 13+ towers, and the same product was then implemented for other developers, including Century, Brigade, Vasavi, Ankura, and Supreme.</p></div>
-<div class="grid g2" style="margin-top:16px">
-<button class="card tool rv"><div class="dot">Live</div><h3>360° Review and Feedback Viewer <i>+</i></h3><div class="more"><div><p>Clients couldn’t give precise feedback on panoramic images. Now they review drafts and comment on specific parts, and project data stays in our own environment.</p><p><a href="https://viewer.zentravisuals.com" target="_blank" rel="noopener" style="color:var(--acc)">Open the viewer</a></p></div></div></button>
-<button class="card tool rv"><div class="dot">Live</div><h3>360° Image Editor <i>+</i></h3><div class="more"><div><p>A workflow for overlays, masked areas, and outlines on 360° and superimposed images, which general-purpose editors handled poorly for our team.</p><p><a href="https://editor.zentravisuals.com" target="_blank" rel="noopener" style="color:var(--acc)">Open the editor</a></p></div></div></button>
-<button class="card tool rv"><div class="dot built">Built</div><h3>Smart File Management <i>+</i></h3><div class="more"><div><p>One central system to find project files across folders, computers, drives, and archives, replacing manual searching.</p></div></div></button>
-<button class="card tool rv"><div class="dot">Live</div><h3>Large-file Drive Tools <i>+</i></h3><div class="more"><div><p>Moves big datasets without manual splitting, and lets clients upload files straight into team-accessible storage.</p><p><a href="https://portal.zentravisuals.com" target="_blank" rel="noopener" style="color:var(--acc)">Open the client upload portal</a></p></div></div></button>
-<button class="card tool rv"><div class="dot wip">In progress</div><h3>Local-first Team Drive <i>+</i></h3><div class="more"><div><p>A self-hosted file space with private storage per person, sharing with colleagues, and expiring links. Scoping the MVP and permissions now.</p></div></div></button>
-</div>
-</div></section>
-
-<section id="capstone" style="padding-top:0"><div class="wrap">
+<section id="capstone"><div class="wrap">
 <h2 class="rv">Capstone: Porter</h2>
 <p class="lead rv">An Airtribe PM Launchpad case study on lifting first-trip conversion for Porter’s first-time individual customers, from 41% to 58%. It is coursework built from my own research, not a Porter engagement.</p>
 <div class="tabs" role="tablist" id="tabs">
@@ -183,6 +180,31 @@ footer h2{font-size:clamp(2.2rem,6vw,3.8rem);max-width:14ch}
 <p class="note">North Star: first-trip completion rate. Guardrails: no-show rate, 30 and 90 day rebooking, fare disputes and damage claims, first-timer CSAT. RICE scores are directional estimates from a small sample, and these impact figures are an illustrative model, not a forecast.</p></div>
 </div></section>
 
+<section id="journey" style="padding-top:0"><div class="wrap">
+<h2 class="rv">The journey so far</h2>
+<p class="lead rv">Each role added something a product manager needs: how customers decide, how teams ship, and how a business runs.</p>
+<ol class="tl" id="tl">
+<li><small>2016 to 2023</small><h3>Founder and business head, Shutter Diaries</h3>Built a services business to ₹6Cr+ across 350+ clients, owning P&amp;L, sales, and operations.</li>
+<li><small>2020 to 2023</small><h3>Marketing head, Relata</h3>Built go-to-market that doubled qualified B2B leads, alongside Product and Sales.</li>
+<li><small>2023 to 2025</small><h3>Product and experience lead, Relata</h3>Ran discovery, wrote PRDs with Engineering, and helped cut delivery timelines by 32%.</li>
+<li><small>2025 to now</small><h3>Business head, Zentra Visuals</h3>Own a new vertical and build internal tools that remove team bottlenecks.</li>
+</ol>
+</div></section>
+
+<section id="work" style="padding-top:0"><div class="wrap">
+<h2 class="rv">Selected work</h2>
+<p class="lead rv">One enterprise product story, and the tools I built for real friction. Tap a tool to read more.</p>
+<div class="card feat rv"><div class="dot">Shipped at Relata</div><h3>House of Hiranandani: a digital sales gallery that scaled to other developers</h3>
+<p>Hiranandani’s sales teams sold large projects with static images and walkthrough videos, switching between files for every buyer question about units, views, and nearby facilities. I proposed replacing that with one digital sales gallery in four parts: Neighbourhood, Inventory, Amenities, and Collateral. I designed the maps, zones, and navigation flows, prototyped it for the client, and worked with Product and Engineering on scope. After agreeing on an MVP, core functionality shipped in about four months against a six-month estimate. Sales-team usage went up. The gallery was built for four Hiranandani projects, including developments with 13+ towers, and the same product was then implemented for other developers, including Century, Brigade, Vasavi, Ankura, and Supreme.</p></div>
+<div class="grid g2" style="margin-top:16px">
+<button class="card tool rv"><div class="dot">Live</div><h3>360° Review and Feedback Viewer <i>+</i></h3><div class="more"><div><p>Clients couldn’t give precise feedback on panoramic images. Now they review drafts and comment on specific parts, and project data stays in our own environment.</p><p><a href="https://viewer.zentravisuals.com" target="_blank" rel="noopener" style="color:var(--acc)">Open the viewer</a></p></div></div></button>
+<button class="card tool rv"><div class="dot">Live</div><h3>360° Image Editor <i>+</i></h3><div class="more"><div><p>A workflow for overlays, masked areas, and outlines on 360° and superimposed images, which general-purpose editors handled poorly for our team.</p><p><a href="https://editor.zentravisuals.com" target="_blank" rel="noopener" style="color:var(--acc)">Open the editor</a></p></div></div></button>
+<button class="card tool rv"><div class="dot built">Built</div><h3>Smart File Management <i>+</i></h3><div class="more"><div><p>One central system to find project files across folders, computers, drives, and archives, replacing manual searching.</p></div></div></button>
+<button class="card tool rv"><div class="dot">Live</div><h3>Large-file Drive Tools <i>+</i></h3><div class="more"><div><p>Moves big datasets without manual splitting, and lets clients upload files straight into team-accessible storage.</p><p><a href="https://portal.zentravisuals.com" target="_blank" rel="noopener" style="color:var(--acc)">Open the client upload portal</a></p></div></div></button>
+<button class="card tool rv"><div class="dot wip">In progress</div><h3>Local-first Team Drive <i>+</i></h3><div class="more"><div><p>A self-hosted file space with private storage per person, sharing with colleagues, and expiring links. Scoping the MVP and permissions now.</p></div></div></button>
+</div>
+</div></section>
+
 <section id="skills" style="padding-top:0"><div class="wrap">
 <h2 class="rv">Skills</h2>
 <p class="lead rv">B.Tech Mechanical Engineering with a minor in Product Design from IIT Guwahati, and AI Product Management at Airtribe (in progress).</p>
@@ -196,9 +218,50 @@ footer h2{font-size:clamp(2.2rem,6vw,3.8rem);max-width:14ch}
 <p class="rv" style="margin:28px 0 0;max-width:60ch;font-family:Newsreader,Georgia,serif;font-size:1.35rem;line-height:1.35">I’ve been the owner, the team lead, the link between teams, and the one doing the work, so I plan with the full picture.</p>
 </div></section>
 
-<footer id="contact"><div class="wrap"><h2 class="rv">Let’s build something customers trust.</h2>
-<p class="lead rv" style="margin-top:14px">Hiring for an Associate or Senior Product Manager role? I’d love to talk.</p>
-<a class="btn main" href="mailto:d.lokesh45@gmail.com">Email me</a><a class="btn" href="https://linkedin.com/in/lokeshdeswal" target="_blank" rel="noopener">LinkedIn</a></div></footer>
+<footer id="contact"><div class="wrap">
+  <div class="footer-grid">
+    <div class="footer-main rv">
+      <div class="dot" style="margin-bottom:14px">Open to Product Management Opportunities</div>
+      <h2>Let’s build something customers trust.</h2>
+      <p class="lead" style="margin-top:14px">Looking for a Product Manager who can own discovery, scope ruthlessly, and ship? Let's talk.</p>
+      <div class="footer-actions">
+        <a class="btn main" href="mailto:d.lokesh45@gmail.com">Email me</a>
+        <a class="btn" href="https://linkedin.com/in/lokeshdeswal" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+    </div>
+    <div class="footer-card card rv">
+      <div class="contact-header">
+        <span class="contact-kicker">Direct Contact</span>
+        <span class="status-indicator"><span class="pulse-dot"></span> Available</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Email</span>
+        <a href="mailto:d.lokesh45@gmail.com" class="contact-val">d.lokesh45@gmail.com</a>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Location</span>
+        <span class="contact-val">Pune, India • Remote / Relocation</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Education</span>
+        <span class="contact-val">IIT Guwahati (B.Tech + Minor Design)</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Specialization</span>
+        <span class="contact-val">Enterprise SaaS, PropTech, AI Workflows</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <div class="footer-meta">
+      <span>© 2026 Lokesh Deswal</span>
+      <span class="meta-sep">•</span>
+      <span>Product Manager</span>
+    </div>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </div>
+</div></footer>
 
 <script>
 (function(){

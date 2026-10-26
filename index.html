@@ -104,8 +104,30 @@ input[type=range]{width:100%;accent-color:var(--acc)}
 .chips{display:flex;flex-wrap:wrap;gap:10px}
 .chips span{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:8px 18px;font-size:.93rem;transition:all .2s;cursor:default}
 .chips span:hover{background:var(--acc);color:var(--accfg);border-color:var(--acc);transform:translateY(-3px)}
-footer{padding:96px 0;border-top:1px solid var(--line)}
-footer h2{font-size:clamp(2.2rem,6vw,3.8rem);max-width:14ch}
+footer{padding:80px 0 36px;border-top:1px solid var(--line);position:relative;background:color-mix(in srgb,var(--card) 25%,var(--bg))}
+.footer-grid{display:grid;grid-template-columns:1.2fr .85fr;gap:48px;align-items:start}
+footer h2{font-size:clamp(1.95rem,3.4vw,2.95rem);max-width:32ch;line-height:1.2;text-wrap:balance;margin-bottom:0}
+footer .lead{max-width:52ch;text-wrap:pretty;line-height:1.6}
+.footer-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:28px}
+.footer-actions .btn{margin:0}
+.footer-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px;box-shadow:0 8px 30px rgba(0,0,0,.04)}
+.contact-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.contact-kicker{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;font-weight:700;color:var(--mute)}
+.status-indicator{display:inline-flex;align-items:center;gap:7px;font-size:.82rem;color:var(--mute);font-weight:600}
+.pulse-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#2fb26b;box-shadow:0 0 0 0 rgba(47,178,107,.5);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(47,178,107,.5)}70%{box-shadow:0 0 0 6px rgba(47,178,107,0)}100%{box-shadow:0 0 0 0 rgba(47,178,107,0)}}
+.contact-row{display:flex;justify-content:space-between;align-items:baseline;padding:10px 0;border-bottom:1px dashed var(--line);font-size:.88rem;gap:14px}
+.contact-row:last-child{border-bottom:0;padding-bottom:0}
+.contact-label{color:var(--mute);flex-shrink:0}
+.contact-val{color:var(--fg);font-weight:500;text-align:right}
+.contact-val a,.contact-row a.contact-val{color:var(--acc);text-decoration:none;transition:opacity .2s}
+.contact-val a:hover,.contact-row a.contact-val:hover{opacity:.8;text-decoration:underline}
+.footer-bottom{margin-top:56px;padding-top:24px;border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;font-size:.85rem;color:var(--mute);flex-wrap:wrap;gap:12px}
+.footer-meta{display:flex;align-items:center;gap:8px}
+.meta-sep{opacity:.4}
+.back-to-top{color:var(--mute);text-decoration:none;font-weight:500;transition:color .2s;display:inline-flex;align-items:center;gap:4px}
+.back-to-top:hover{color:var(--acc)}
+@media (max-width:860px){.footer-grid{grid-template-columns:1fr;gap:36px}}
 
 /* Modal Styling */
 .modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.65);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);z-index:100;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease}
@@ -149,7 +171,7 @@ footer h2{font-size:clamp(2.2rem,6vw,3.8rem);max-width:14ch}
 </head>
 <body>
 <div id="bar"></div>
-<nav><div class="wrap"><b>Lokesh Deswal</b><a href="#journey">Journey</a><a href="#work">Work</a><a href="#capstone">Capstone</a><a href="#skills">Skills</a><a href="#contact">Contact</a><button id="theme" aria-label="Toggle light and dark theme">◐</button></div></nav>
+<nav><div class="wrap"><b>Lokesh Deswal</b><a href="#capstone">Capstone</a><a href="#journey">Journey</a><a href="#work">Work</a><a href="#skills">Skills</a><a href="#contact">Contact</a><button id="theme" aria-label="Toggle light and dark theme">◐</button></div></nav>
 
 <header class="hero" id="top"><div class="wrap">
 <small>Lokesh Deswal • Product Manager</small>
@@ -164,7 +186,42 @@ footer h2{font-size:clamp(2.2rem,6vw,3.8rem);max-width:14ch}
 </div>
 </div></header>
 
-<section id="journey"><div class="wrap">
+<section id="capstone"><div class="wrap">
+<h2 class="rv">Capstone: Porter</h2>
+<p class="lead rv">An Airtribe PM Launchpad case study on lifting first-trip conversion for Porter’s first-time individual customers, from 41% to 58%. It is coursework built from my own research, not a Porter engagement.</p>
+<div class="tabs" role="tablist" id="tabs">
+<button role="tab" aria-selected="true" data-t="p0">Research</button><button role="tab" aria-selected="false" data-t="p1">Barriers</button><button role="tab" aria-selected="false" data-t="p2">Solutions</button><button role="tab" aria-selected="false" data-t="p3">Rollout</button><button role="tab" aria-selected="false" data-t="p4">Impact</button></div>
+
+<div class="panel" id="p0"><div class="grid g2">
+<div class="card"><h3>Five methods, one funnel view</h3><p style="color:var(--mute)">A 12-person survey, 8 follow-up interviews, a full app and web flow teardown, and a benchmark of 7 competitors across 8 feature areas.</p></div>
+<div class="card"><h3>The finding</h3><p style="color:var(--mute)">Trust, not the physical service, breaks first-trip conversion. Three of 12 respondents independently said the vehicle arrived on a different day than promised, and damage, delays, support, and hidden charges recur across every competitor.</p></div>
+<div class="card"><h3>The anxious first-time renter</h3><p style="color:var(--mute)">Has never booked a mover. Needs clear pricing, proof the provider will show up, and visibility after paying.</p></div>
+<div class="card"><h3>The budget-conscious shopper</h3><p style="color:var(--mute)">Compares 3 or 4 options and needs an itemised price they can compare, not one opaque total.</p></div></div></div>
+
+<div class="panel" id="p1" hidden><p style="color:var(--mute);margin-top:0">RICE narrowed eight drop-off themes to two primary barriers, shown in blue.</p>
+<div class="bars" id="bars"></div>
+<div class="grid g2"><div class="card"><h3>1. An untrustworthy quote step</h3><p style="color:var(--mute)">The app hides the breakdown behind a tap-through, and the web gives no price without a 24 to 48 hour callback.</p></div>
+<div class="card"><h3>2. Blackout after payment</h3><p style="color:var(--mute)">No driver, vehicle, or status exactly when “will they show up” anxiety peaks.</p></div></div></div>
+
+<div class="panel" id="p2" hidden><p style="color:var(--mute);margin-top:0">Two additive screens, not a redesign. Pick a stage of the journey to see what changes.</p>
+<div class="chipset" id="stages"></div>
+<div class="ba"><div class="card"><h3>Today</h3><p id="today" style="margin:0"></p></div><div class="card"><h3>With the change</h3><p id="after" style="margin:0"></p></div></div>
+<p class="note" style="margin-top:16px">Solution 1, itemised price with a Price-Lock badge, scored RICE 0.425. Solution 2, driver and vehicle reveal with milestone status, scored 0.298. Both use data Porter already holds.</p></div>
+
+<div class="panel" id="p3" hidden><p style="color:var(--mute);margin-top:0">Gated cohorts in Bengaluru and Pune first. Select a stage to see who is in it and what must be true to move on.</p>
+<div class="chipset" id="cohorts"></div>
+<div class="card"><h3 id="cwho" style="margin-bottom:6px"></h3><p id="cgate" style="margin:0;color:var(--mute)"></p></div></div>
+
+<div class="panel" id="p4" hidden><div class="card calc"><h3>Business impact model</h3><p style="color:var(--mute);margin-top:6px">Defaults match the capstone: 100,000 monthly users at quote stage, 41% to 58% conversion, ₹8,000 average order, and about a 17% platform take rate. Move the sliders to test it.</p>
+<label>Monthly quote-stage users<input type="range" id="u" min="20000" max="300000" step="5000" value="100000"><output id="uo"></output></label>
+<label>Current conversion<input type="range" id="c0" min="20" max="60" value="41"><output id="c0o"></output></label>
+<label>Target conversion<input type="range" id="c1" min="25" max="80" value="58"><output id="c1o"></output></label>
+<label>Average order value<input type="range" id="a" min="2000" max="15000" step="500" value="8000"><output id="ao"></output></label>
+<div class="res"><div><b id="r1">0</b><span>extra trips a month</span></div><div><b id="r2">0</b><span>extra monthly GMV, in ₹ crore</span></div><div><b id="r3">0</b><span>extra monthly platform revenue, in ₹ crore</span></div></div></div>
+<p class="note">North Star: first-trip completion rate. Guardrails: no-show rate, 30 and 90 day rebooking, fare disputes and damage claims, first-timer CSAT. RICE scores are directional estimates from a small sample, and these impact figures are an illustrative model, not a forecast.</p></div>
+</div></section>
+
+<section id="journey" style="padding-top:0"><div class="wrap">
 <h2 class="rv">The journey so far</h2>
 <p class="lead rv">Each chapter reinforced a core PM muscle: uncovering user friction, scoping with engineering constraints, and driving commercial outcomes.</p>
 <ol class="tl" id="tl">
@@ -263,41 +320,6 @@ footer h2{font-size:clamp(2.2rem,6vw,3.8rem);max-width:14ch}
 </div>
 </div></section>
 
-<section id="capstone" style="padding-top:0"><div class="wrap">
-<h2 class="rv">Capstone: Porter</h2>
-<p class="lead rv">An Airtribe PM Launchpad case study on lifting first-trip conversion for Porter’s first-time individual customers, from 41% to 58%. It is coursework built from my own research, not a Porter engagement.</p>
-<div class="tabs" role="tablist" id="tabs">
-<button role="tab" aria-selected="true" data-t="p0">Research</button><button role="tab" aria-selected="false" data-t="p1">Barriers</button><button role="tab" aria-selected="false" data-t="p2">Solutions</button><button role="tab" aria-selected="false" data-t="p3">Rollout</button><button role="tab" aria-selected="false" data-t="p4">Impact</button></div>
-
-<div class="panel" id="p0"><div class="grid g2">
-<div class="card"><h3>Five methods, one funnel view</h3><p style="color:var(--mute)">A 12-person survey, 8 follow-up interviews, a full app and web flow teardown, and a benchmark of 7 competitors across 8 feature areas.</p></div>
-<div class="card"><h3>The finding</h3><p style="color:var(--mute)">Trust, not the physical service, breaks first-trip conversion. Three of 12 respondents independently said the vehicle arrived on a different day than promised, and damage, delays, support, and hidden charges recur across every competitor.</p></div>
-<div class="card"><h3>The anxious first-time renter</h3><p style="color:var(--mute)">Has never booked a mover. Needs clear pricing, proof the provider will show up, and visibility after paying.</p></div>
-<div class="card"><h3>The budget-conscious shopper</h3><p style="color:var(--mute)">Compares 3 or 4 options and needs an itemised price they can compare, not one opaque total.</p></div></div></div>
-
-<div class="panel" id="p1" hidden><p style="color:var(--mute);margin-top:0">RICE narrowed eight drop-off themes to two primary barriers, shown in blue.</p>
-<div class="bars" id="bars"></div>
-<div class="grid g2"><div class="card"><h3>1. An untrustworthy quote step</h3><p style="color:var(--mute)">The app hides the breakdown behind a tap-through, and the web gives no price without a 24 to 48 hour callback.</p></div>
-<div class="card"><h3>2. Blackout after payment</h3><p style="color:var(--mute)">No driver, vehicle, or status exactly when “will they show up” anxiety peaks.</p></div></div></div>
-
-<div class="panel" id="p2" hidden><p style="color:var(--mute);margin-top:0">Two additive screens, not a redesign. Pick a stage of the journey to see what changes.</p>
-<div class="chipset" id="stages"></div>
-<div class="ba"><div class="card"><h3>Today</h3><p id="today" style="margin:0"></p></div><div class="card"><h3>With the change</h3><p id="after" style="margin:0"></p></div></div>
-<p class="note" style="margin-top:16px">Solution 1, itemised price with a Price-Lock badge, scored RICE 0.425. Solution 2, driver and vehicle reveal with milestone status, scored 0.298. Both use data Porter already holds.</p></div>
-
-<div class="panel" id="p3" hidden><p style="color:var(--mute);margin-top:0">Gated cohorts in Bengaluru and Pune first. Select a stage to see who is in it and what must be true to move on.</p>
-<div class="chipset" id="cohorts"></div>
-<div class="card"><h3 id="cwho" style="margin-bottom:6px"></h3><p id="cgate" style="margin:0;color:var(--mute)"></p></div></div>
-
-<div class="panel" id="p4" hidden><div class="card calc"><h3>Business impact model</h3><p style="color:var(--mute);margin-top:6px">Defaults match the capstone: 100,000 monthly users at quote stage, 41% to 58% conversion, ₹8,000 average order, and about a 17% platform take rate. Move the sliders to test it.</p>
-<label>Monthly quote-stage users<input type="range" id="u" min="20000" max="300000" step="5000" value="100000"><output id="uo"></output></label>
-<label>Current conversion<input type="range" id="c0" min="20" max="60" value="41"><output id="c0o"></output></label>
-<label>Target conversion<input type="range" id="c1" min="25" max="80" value="58"><output id="c1o"></output></label>
-<label>Average order value<input type="range" id="a" min="2000" max="15000" step="500" value="8000"><output id="ao"></output></label>
-<div class="res"><div><b id="r1">0</b><span>extra trips a month</span></div><div><b id="r2">0</b><span>extra monthly GMV, in ₹ crore</span></div><div><b id="r3">0</b><span>extra monthly platform revenue, in ₹ crore</span></div></div></div>
-<p class="note">North Star: first-trip completion rate. Guardrails: no-show rate, 30 and 90 day rebooking, fare disputes and damage claims, first-timer CSAT. RICE scores are directional estimates from a small sample, and these impact figures are an illustrative model, not a forecast.</p></div>
-</div></section>
-
 <section id="skills" style="padding-top:0"><div class="wrap">
 <h2 class="rv">How I work &amp; PM skills</h2>
 <p class="lead rv">B.Tech Mechanical Engineering with a minor in Product Design from IIT Guwahati, and AI Product Management at Airtribe. I combine founder-level business ownership with hands-on product execution.</p>
@@ -311,9 +333,51 @@ footer h2{font-size:clamp(2.2rem,6vw,3.8rem);max-width:14ch}
 <p class="rv" style="margin:28px 0 0;max-width:62ch;font-family:Newsreader,Georgia,serif;font-size:1.35rem;line-height:1.35">"The best product managers understand both sides of the coin: the human friction experienced by the user, and the unit economics required by the business."</p>
 </div></section>
 
-<footer id="contact"><div class="wrap"><h2 class="rv">Let’s build something customers trust.</h2>
-<p class="lead rv" style="margin-top:14px">Looking for a Product Manager who can own discovery, scope ruthlessly, and ship? Let's talk.</p>
-<a class="btn main" href="mailto:d.lokesh45@gmail.com">Email me</a><a class="btn" href="https://linkedin.com/in/lokeshdeswal" target="_blank" rel="noopener">LinkedIn</a><button class="btn" id="btnFooterResume">View Resume</button></div></footer>
+<footer id="contact"><div class="wrap">
+  <div class="footer-grid">
+    <div class="footer-main rv">
+      <div class="dot" style="margin-bottom:14px">Open to Product Management Opportunities</div>
+      <h2>Let’s build something customers trust.</h2>
+      <p class="lead" style="margin-top:14px">Looking for a Product Manager who can own discovery, scope ruthlessly, and ship? Let's talk.</p>
+      <div class="footer-actions">
+        <a class="btn main" href="mailto:d.lokesh45@gmail.com">Email me</a>
+        <a class="btn" href="https://linkedin.com/in/lokeshdeswal" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <button class="btn" id="btnFooterResume">View Resume</button>
+      </div>
+    </div>
+    <div class="footer-card card rv">
+      <div class="contact-header">
+        <span class="contact-kicker">Direct Contact</span>
+        <span class="status-indicator"><span class="pulse-dot"></span> Available</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Email</span>
+        <a href="mailto:d.lokesh45@gmail.com" class="contact-val">d.lokesh45@gmail.com</a>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Location</span>
+        <span class="contact-val">Pune, India • Remote / Relocation</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Education</span>
+        <span class="contact-val">IIT Guwahati (B.Tech + Minor Design)</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-label">Specialization</span>
+        <span class="contact-val">Enterprise SaaS, PropTech, AI Workflows</span>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-bottom">
+    <div class="footer-meta">
+      <span>© 2026 Lokesh Deswal</span>
+      <span class="meta-sep">•</span>
+      <span>Product Manager</span>
+    </div>
+    <a href="#top" class="back-to-top">Back to top ↑</a>
+  </div>
+</div></footer>
 
 <!-- ==========================================================================
      RESUME MODAL & ATS EXPORT
