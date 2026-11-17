@@ -142,10 +142,10 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset
 .tl small{color:var(--mute);display:block;font-size:.82rem;font-weight:600}
 
 /* Status dots */
-.dot{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:600;color:var(--mute);padding:3px 9px;border-radius:99px;background:var(--soft);border:1px solid transparent}
-.dot::before{content:"";width:6px;height:6px;border-radius:50%;background:#10b981}
-.dot.wip::before{background:#f59e0b}
-.dot.built::before{background:var(--acc)}
+.dot{display:inline-flex;align-items:center;gap:6px;font-size:.75rem;font-weight:600;letter-spacing:.02em;color:var(--fg);padding:4px 10px;border-radius:99px;background:color-mix(in srgb,var(--bg) 60%,var(--card));border:1px solid var(--line);white-space:nowrap}
+.dot::before{content:"";width:6px;height:6px;border-radius:50%;background:#10b981;box-shadow:0 0 0 2px rgba(16,185,129,.2)}
+.dot.wip::before{background:#f59e0b;box-shadow:0 0 0 2px rgba(245,158,11,.2)}
+.dot.built::before{background:var(--acc);box-shadow:0 0 0 2px rgba(79,70,229,.2)}
 
 /* REDESIGNED PRODUCT CARD (Compact & Engaging) */
 .product-card{display:flex;flex-direction:column;background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:20px 22px;transition:border-color .25s,box-shadow .25s}
@@ -161,18 +161,9 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--acc);outline-offset
 .card-nav-btn.active{background:var(--card);color:var(--acc);box-shadow:0 1px 4px rgba(0,0,0,.06)}
 
 /* Content box showing active 4-step tab */
-.card-tab-display{background:color-mix(in srgb,var(--bg) 40%,var(--card));border:1px solid var(--line);border-radius:var(--radius-sm);padding:11px 13px;min-height:92px;display:flex;flex-direction:column;justify-content:center;margin-bottom:14px;transition:all .2s ease}
+.card-tab-display{background:color-mix(in srgb,var(--bg) 40%,var(--card));border:1px solid var(--line);border-radius:var(--radius-sm);padding:13px 15px;min-height:94px;display:flex;flex-direction:column;justify-content:center;margin-bottom:16px;transition:all .2s ease}
 .card-tab-lead{font-size:.73rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--acc);margin-bottom:3px;display:flex;align-items:center;gap:4px}
 .card-tab-text{color:var(--fg);font-size:.84rem;line-height:1.48;margin:0}
-
-/* Expandable Full 4-Step Accordion */
-.toggle-accordion{display:inline-flex;align-items:center;gap:5px;font-size:.78rem;font-weight:600;color:var(--acc);background:none;border:none;padding:0;cursor:pointer;margin-bottom:12px;transition:opacity .2s}
-.toggle-accordion:hover{opacity:.8}
-.accordion-content{display:none;padding-top:8px;border-top:1px dashed var(--line);margin-bottom:14px}
-.accordion-content.show{display:grid;gap:8px}
-.acc-row{display:grid;grid-template-columns:54px 1fr;gap:8px;font-size:.81rem;line-height:1.45}
-.acc-tag{font-weight:700;color:var(--acc);text-transform:uppercase;font-size:.72rem}
-.acc-desc{color:var(--mute)}
 
 .product-footer{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:12px;border-top:1px solid var(--line);gap:10px;flex-wrap:wrap}
 .metric-badge{font-size:.8rem;font-weight:600;color:var(--success);display:inline-flex;align-items:center;gap:5px}
@@ -533,16 +524,6 @@ footer .lead{max-width:52ch;line-height:1.55}
         <p class="card-tab-text">Clients sent confusing feedback via WhatsApp messages and rough screenshots ("fix light on left"), causing 4–6 painful revision cycles and risking raw CAD file leakage.</p>
       </div>
 
-      <button class="toggle-accordion" data-target="acc-p1">
-        <span>View all 4 steps at once</span> <small>↓</small>
-      </button>
-      
-      <div class="accordion-content" id="acc-p1">
-        <div class="acc-row"><span class="acc-tag">WHY</span><span class="acc-desc">WhatsApp feedback cycles took 4–6 rounds; proprietary models lacked security.</span></div>
-        <div class="acc-row"><span class="acc-tag">WHAT</span><span class="acc-desc">Spatial annotation web tool to pin comments inside 360° drafts and track status.</span></div>
-        <div class="acc-row"><span class="acc-tag">HOW</span><span class="acc-desc">Three.js/WebGL equirectangular rendering with coordinate-locked markers.</span></div>
-        <div class="acc-row"><span class="acc-tag">WHO</span><span class="acc-desc">Architects, interior design directors, client PMs, and 3D artists.</span></div>
-      </div>
       
       <div class="product-footer">
         <span class="metric-badge">
@@ -576,16 +557,6 @@ footer .lead{max-width:52ch;line-height:1.55}
         <p class="card-tab-text">Photoshop distorts 360° poles. Artists spent 2 to 5 hours per image manually slicing, projecting, and blending drone site photos with 3D renders.</p>
       </div>
 
-      <button class="toggle-accordion" data-target="acc-p2">
-        <span>View all 4 steps at once</span> <small>↓</small>
-      </button>
-      
-      <div class="accordion-content" id="acc-p2">
-        <div class="acc-row"><span class="acc-tag">WHY</span><span class="acc-desc">Generic image tools distorted spherical poles; manual blending took 2–5 hours.</span></div>
-        <div class="acc-row"><span class="acc-tag">WHAT</span><span class="acc-desc">Browser canvas tool with latitude/longitude horizon alignment and spherical masking.</span></div>
-        <div class="acc-row"><span class="acc-tag">HOW</span><span class="acc-desc">Mapped equirectangular distortion onto interactive HTML5 Canvas with 1-click blending.</span></div>
-        <div class="acc-row"><span class="acc-tag">WHO</span><span class="acc-desc">Compositing artists, drone integration specialists, and studio creative leads.</span></div>
-      </div>
       
       <div class="product-footer">
         <span class="metric-badge">
@@ -619,16 +590,6 @@ footer .lead{max-width:52ch;line-height:1.55}
         <p class="card-tab-text">Clients uploaded GBs of CAD models via fragmented WeTransfer links that expired in 7 days, consistently missing critical texture assets and delay-locking project kickoffs.</p>
       </div>
 
-      <button class="toggle-accordion" data-target="acc-p3">
-        <span>View all 4 steps at once</span> <small>↓</small>
-      </button>
-      
-      <div class="accordion-content" id="acc-p3">
-        <div class="acc-row"><span class="acc-tag">WHY</span><span class="acc-desc">Expired WeTransfer links and missing reference textures halted kickoffs.</span></div>
-        <div class="acc-row"><span class="acc-tag">WHAT</span><span class="acc-desc">Client upload portal with automated format verification and resumable uploads.</span></div>
-        <div class="acc-row"><span class="acc-tag">HOW</span><span class="acc-desc">Chunked multi-part cloud storage uploads with automated directory scaffolding.</span></div>
-        <div class="acc-row"><span class="acc-tag">WHO</span><span class="acc-desc">Client project managers, external architectural consultants, and onboarding leads.</span></div>
-      </div>
       
       <div class="product-footer">
         <span class="metric-badge">
@@ -662,16 +623,6 @@ footer .lead{max-width:52ch;line-height:1.55}
         <p class="card-tab-text">Artists lost 15–20% of their billable week searching for archived project files and past 3D models scattered across 12+ disconnected physical SSDs and network shares.</p>
       </div>
 
-      <button class="toggle-accordion" data-target="acc-p4">
-        <span>View all 4 steps at once</span> <small>↓</small>
-      </button>
-      
-      <div class="accordion-content" id="acc-p4">
-        <div class="acc-row"><span class="acc-tag">WHY</span><span class="acc-desc">Searching across disconnected SSD drives wasted hours of high-value artist time.</span></div>
-        <div class="acc-row"><span class="acc-tag">WHAT</span><span class="acc-desc">Central metadata indexing system with automated tier-storage archival to free SSDs.</span></div>
-        <div class="acc-row"><span class="acc-tag">HOW</span><span class="acc-desc">Directory indexing daemon with thumbnail generation and file hash de-duplication.</span></div>
-        <div class="acc-row"><span class="acc-tag">WHO</span><span class="acc-desc">Internal production squads, 3D modelers, animators, and IT operations.</span></div>
-      </div>
       
       <div class="product-footer">
         <span class="metric-badge">
@@ -705,16 +656,6 @@ footer .lead{max-width:52ch;line-height:1.55}
         <p class="card-tab-text">Junior artists struggled with consistent visual styling, lighting moods, and staging for luxury architectural renders, causing repetitive supervisor rework.</p>
       </div>
 
-      <button class="toggle-accordion" data-target="acc-p5">
-        <span>View all 4 steps at once</span> <small>↓</small>
-      </button>
-      
-      <div class="accordion-content" id="acc-p5">
-        <div class="acc-row"><span class="acc-tag">WHY</span><span class="acc-desc">Inconsistent visual styling and lighting across renders led to heavy rework churn.</span></div>
-        <div class="acc-row"><span class="acc-tag">WHAT</span><span class="acc-desc">Pipeline translating architectural briefs into structured scene prompts and QA rules.</span></div>
-        <div class="acc-row"><span class="acc-tag">HOW</span><span class="acc-desc">Domain-tuned LLM prompt chains with automated pre-flight quality gates.</span></div>
-        <div class="acc-row"><span class="acc-tag">WHO</span><span class="acc-desc">Visualization artists, project managers, and creative quality assurance leads.</span></div>
-      </div>
       
       <div class="product-footer">
         <span class="metric-badge">
@@ -748,16 +689,6 @@ footer .lead{max-width:52ch;line-height:1.55}
         <p class="card-tab-text">Enterprise clients enforce strict NDAs. Storing unreleased architectural CAD blueprints on public clouds created severe legal and security exposure risks.</p>
       </div>
 
-      <button class="toggle-accordion" data-target="acc-p6">
-        <span>View all 4 steps at once</span> <small>↓</small>
-      </button>
-      
-      <div class="accordion-content" id="acc-p6">
-        <div class="acc-row"><span class="acc-tag">WHY</span><span class="acc-desc">Confidential architectural CAD files posed legal risks on generic cloud drives.</span></div>
-        <div class="acc-row"><span class="acc-tag">WHAT</span><span class="acc-desc">Zero-knowledge local drive with user vaults, peer sync, and expiring links.</span></div>
-        <div class="acc-row"><span class="acc-tag">HOW</span><span class="acc-desc">Authored PRD for client-side encryption and SQLite metadata cache. In MVP testing.</span></div>
-        <div class="acc-row"><span class="acc-tag">WHO</span><span class="acc-desc">Enterprise developers, NDA-bound architects, and security-focused studios.</span></div>
-      </div>
       
       <div class="product-footer">
         <span class="metric-badge">
@@ -1084,19 +1015,6 @@ d.addEventListener('click', function(e){
     display.querySelector('.card-tab-text').textContent = data.text;
   }
   trackEvent('product_tab_switch', { card: cardId, step: step });
-});
-
-/* Toggle accordion for viewing full 4 steps */
-d.addEventListener('click', function(e){
-  var btn = e.target.closest('.toggle-accordion');
-  if(!btn) return;
-  var targetId = btn.getAttribute('data-target');
-  var acc = d.getElementById(targetId);
-  if(acc){
-    var isExpanded = acc.classList.toggle('show');
-    btn.querySelector('span').textContent = isExpanded ? 'Collapse 4 steps' : 'View all 4 steps at once';
-    btn.querySelector('small').textContent = isExpanded ? '↑' : '↓';
-  }
 });
 
 /* Capstone RICE Data */
