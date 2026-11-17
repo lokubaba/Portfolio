@@ -311,10 +311,10 @@ footer .lead{max-width:52ch;line-height:1.55}
     <b>
       <span>Lokesh Deswal</span>
     </b>
-    <a href="#capstone" data-ga="nav_capstone">Capstone</a>
-    <a href="#journey" data-ga="nav_journey">Journey</a>
     <a href="#work" data-ga="nav_work">Products Built</a>
+    <a href="#journey" data-ga="nav_journey">Career Journey</a>
     <a href="#skills" data-ga="nav_skills">Skills &amp; Methods</a>
+    <a href="#capstone" data-ga="nav_capstone">Porter Capstone</a>
     <a href="#contact" data-ga="nav_contact">Contact</a>
     <button id="theme" aria-label="Toggle light and dark theme">◐</button>
   </div>
@@ -328,8 +328,8 @@ footer .lead{max-width:52ch;line-height:1.55}
   <h1 id="h1">I build products the way I ran a ₹6Cr business: solving root friction first.</h1>
   <p>10 years of experience building digital products and businesses. From scaling a bootstrapped venture to ₹6Cr+ to architecting enterprise PropTech platforms across 13+ towers and 100+ digital galleries, and deploying AI workflow engines that cut production cycles from hours to minutes. IIT Guwahati graduate.</p>
   <div class="hero-actions">
-    <a class="btn main" href="#capstone" data-ga="hero_cta_capstone">Explore Porter Capstone</a>
-    <a class="btn" href="#work" data-ga="hero_cta_work">View Products Built</a>
+    <a class="btn main" href="#work" data-ga="hero_cta_work">View Products Built</a>
+    <a class="btn" href="#capstone" data-ga="hero_cta_capstone">Explore Porter Capstone</a>
     <button class="btn btn-ghost" id="btnHeroResume" data-ga="hero_cta_resume">Quick Resume ↗</button>
   </div>
   <div class="stats">
@@ -340,113 +340,7 @@ footer .lead{max-width:52ch;line-height:1.55}
   </div>
 </div></header>
 
-<section id="capstone"><div class="wrap">
-  <h2 class="rv">Capstone: Porter First-Trip Conversion</h2>
-  <p class="lead rv">An Airtribe PM Launchpad case study on lifting first-trip conversion for Porter’s individual moving customers from 41% to 58%, uncovering that trust—not pricing or fleet size—breaks conversion.</p>
-  <div class="tabs" role="tablist" id="tabs">
-    <button role="tab" aria-selected="true" data-t="p0" data-ga="tab_research">1. Research &amp; Discovery</button>
-    <button role="tab" aria-selected="false" data-t="p1" data-ga="tab_barriers">2. Barrier Prioritization</button>
-    <button role="tab" aria-selected="false" data-t="p2" data-ga="tab_solutions">3. Solutions &amp; Wireframes</button>
-    <button role="tab" aria-selected="false" data-t="p3" data-ga="tab_rollout">4. Gated Rollout Plan</button>
-    <button role="tab" aria-selected="false" data-t="p4" data-ga="tab_impact">5. Business Impact Model</button>
-  </div>
-
-  <div class="panel" id="p0"><div class="grid g2">
-    <div class="card">
-      <h3 style="font-size:1.3rem;margin-bottom:8px">Five Discovery Methods, One Funnel View</h3>
-      <p style="color:var(--mute);margin:0;line-height:1.55">Synthesized qualitative and quantitative insights from a 20-person survey, 8 depth interviews, an end-to-end app/web journey teardown, and competitive analysis against 7 moving logistics competitors.</p>
-    </div>
-    <div class="card">
-      <h3 style="font-size:1.3rem;margin-bottom:8px">The Root Discovery</h3>
-      <p style="color:var(--mute);margin:0;line-height:1.55"><strong>Trust, not pricing, breaks conversion.</strong> Users reported severe pre-move anxiety: unconfirmed truck arrival dates, opaque additional charges upon arrival, and complete blackout between booking confirmation and driver assignment.</p>
-    </div>
-    <div class="card">
-      <h3 style="font-size:1.3rem;margin-bottom:8px">Persona: The Anxious First-Timer</h3>
-      <p style="color:var(--mute);margin:0;line-height:1.55">First-time house mover relocating within Bengaluru/Pune. High stakes, sensitive personal belongings. Needs transparent price lock guarantees and real-time reassurance before parting with deposit money.</p>
-    </div>
-    <div class="card">
-      <h3 style="font-size:1.3rem;margin-bottom:8px">Persona: The Pragmatic Comparer</h3>
-      <p style="color:var(--mute);margin:0;line-height:1.55">Comparing Porter against local packers and Agarwal Packers. Drops off when quoted an arbitrary lump sum without transparent breakdown of labor, toll, fuel, and handling charges.</p>
-    </div>
-  </div></div>
-
-  <div class="panel" id="p1" hidden>
-    <p style="color:var(--mute);margin-top:0">RICE scored 8 distinct drop-off themes; narrowed down to the top two root barriers shown in indigo.</p>
-    <div class="bars" id="bars"></div>
-    <div class="grid g2">
-      <div class="card">
-        <h3 style="font-size:1.25rem;margin-bottom:8px">1. Untrustworthy Quote Step (RICE: 0.266)</h3>
-        <p style="color:var(--mute);margin:0;line-height:1.55">The app hid final cost breakdowns behind multi-tap menus, and the web booking flow mandated a 24–48 hour tele-calling delay, shedding high-intent customers to instant competitors.</p>
-      </div>
-      <div class="card">
-        <h3 style="font-size:1.25rem;margin-bottom:8px">2. Blackout After Payment (RICE: 0.163)</h3>
-        <p style="color:var(--mute);margin:0;line-height:1.55">Total information vacuum post-payment. Zero visibility into assigned driver identity, truck capacity, or milestone checklist during peak anxiety hours.</p>
-      </div>
-    </div>
-  </div>
-
-  <div class="panel" id="p2" hidden>
-    <p style="color:var(--mute);margin-top:0">Two additive, high-leverage interventions utilizing data Porter already possessed. Click each stage:</p>
-    <div class="chipset" id="stages"></div>
-    <div class="ba">
-      <div class="card"><h3>Today (Control)</h3><p id="today" style="margin:0;color:var(--mute);line-height:1.55"></p></div>
-      <div class="card"><h3>With Solution (Test)</h3><p id="after" style="margin:0;color:var(--fg);font-weight:500;line-height:1.55"></p></div>
-    </div>
-    <p class="note"><strong>Solution 1:</strong> Itemised price breakdown + Price-Lock guarantee badge (RICE 0.425). <strong>Solution 2:</strong> Driver, vehicle, and milestone progress reveal (RICE 0.298).</p>
-  </div>
-
-  <div class="panel" id="p3" hidden>
-    <p style="color:var(--mute);margin-top:0">A phased, gated rollout plan focused on Bengaluru and Pune before multi-city scaling. Select stage:</p>
-    <div class="chipset" id="cohorts"></div>
-    <div class="card"><h3 id="cwho" style="margin-bottom:8px;font-size:1.25rem"></h3><p id="cgate" style="margin:0;color:var(--mute);line-height:1.55"></p></div>
-  </div>
-
-  <div class="panel" id="p4" hidden>
-    <div class="card calc">
-      <h3 style="font-size:1.35rem;margin-bottom:6px">Interactive Business Impact Model</h3>
-      <p style="color:var(--mute);margin:0 0 16px;line-height:1.5">Model testing first-trip conversion uplift: 100,000 monthly quote users, baseline 41% lifting toward 58% at ₹8,000 AOV.</p>
-      <label>Monthly quote-stage users<input type="range" id="u" min="20000" max="300000" step="5000" value="100000"><output id="uo"></output></label>
-      <label>Current conversion (%)<input type="range" id="c0" min="20" max="60" value="41"><output id="c0o"></output></label>
-      <label>Target conversion (%)<input type="range" id="c1" min="25" max="80" value="58"><output id="c1o"></output></label>
-      <label>Average order value (₹)<input type="range" id="a" min="2000" max="15000" step="500" value="8000"><output id="ao"></output></label>
-      <div class="res">
-        <div><b id="r1">0</b><span>Extra completed trips / mo</span></div>
-        <div><b id="r2">0</b><span>Extra monthly GMV (₹ Cr)</span></div>
-        <div><b id="r3">0</b><span>Extra monthly take-rate revenue (₹ Cr)</span></div>
-      </div>
-    </div>
-    <p class="note">North Star: First-trip completion rate. Guardrails: Driver cancellation / no-show rate, 30/90-day repeat booking, and customer damage claims.</p>
-  </div>
-</div></section>
-
-<section id="journey" style="padding-top:0"><div class="wrap">
-  <h2 class="rv">Career Journey &amp; Milestones</h2>
-  <p class="lead rv">From building and scaling a commercial business to owning product strategy and delivery across Enterprise SaaS and PropTech.</p>
-  <ol class="tl" id="tl">
-    <li>
-      <small>2025 – Present</small>
-      <h3>Business Head / Product &amp; Ops Lead • Zentra Visuals</h3>
-      Scaled enterprise architectural visualization vertical from scratch, generating <strong>₹65 Lakhs</strong> revenue in 10 months with 7 enterprise clients and a 10-member team. Diagnosed internal production bottlenecks across 3D artists, architects, and clients; designed and shipped 3 production web tools compressing image superimposition turnaround by 95% (2–5 hrs down to 5–10 mins).
-    </li>
-    <li>
-      <small>2023 – 2025</small>
-      <h3>Product &amp; Experience Lead (Vistaire / Immerse) • Relata</h3>
-      Collaborated with VP of Engineering, Design, and Sales to evolve enterprise PropTech sales platforms. Led discovery with 20+ enterprise real-estate developers and 300+ end-users. Architected the House of Hiranandani 4-pillar digital sales gallery across 4 projects and 13+ towers; re-scoped an initial 6-month roadmap to a lean 4-month MVP via RICE scoring (saving 60 days of dev time) and cut client delivery timelines by 32%.
-    </li>
-    <li>
-      <small>2020 – 2023</small>
-      <h3>Marketing &amp; GTM Head • Relata</h3>
-      Spearheaded product-led growth (PLG) and B2B go-to-market strategies that doubled qualified enterprise sales pipeline. Partnered directly with Product and Sales teams on feature pricing, client onboarding, and renewal strategy.
-    </li>
-    <li>
-      <small>2016 – 2023</small>
-      <h3>Founder &amp; Business Head • Shutter Diaries</h3>
-      Bootstrapped and scaled a creative digital services venture to <strong>₹6 Cr+ cumulative revenue</strong> across 350+ clients and 1,000+ completed projects with full P&amp;L ownership. Engineered streamlined delivery systems and internal scheduling tools that cut turnaround times by 35% and achieved 63% repeat business.
-    </li>
-  </ol>
-</div></section>
-
-<section id="work" style="padding-top:0"><div class="wrap">
+<section id="work"><div class="wrap">
   <div style="display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:12px;margin-bottom:24px">
     <div>
       <h2 class="rv" style="margin-bottom:6px">Products Built &amp; Shipped</h2>
@@ -702,6 +596,33 @@ footer .lead{max-width:52ch;line-height:1.55}
   </div>
 </div></section>
 
+<section id="journey" style="padding-top:0"><div class="wrap">
+  <h2 class="rv">Career Journey &amp; Milestones</h2>
+  <p class="lead rv">From building and scaling a commercial business to owning product strategy and delivery across Enterprise SaaS and PropTech.</p>
+  <ol class="tl" id="tl">
+    <li>
+      <small>2025 – Present</small>
+      <h3>Business Head / Product &amp; Ops Lead • Zentra Visuals</h3>
+      Scaled enterprise architectural visualization vertical from scratch, generating <strong>₹65 Lakhs</strong> revenue in 10 months with 7 enterprise clients and a 10-member team. Diagnosed internal production bottlenecks across 3D artists, architects, and clients; designed and shipped 3 production web tools compressing image superimposition turnaround by 95% (2–5 hrs down to 5–10 mins).
+    </li>
+    <li>
+      <small>2023 – 2025</small>
+      <h3>Product &amp; Experience Lead (Vistaire / Immerse) • Relata</h3>
+      Collaborated with VP of Engineering, Design, and Sales to evolve enterprise PropTech sales platforms. Led discovery with 20+ enterprise real-estate developers and 300+ end-users. Architected the House of Hiranandani 4-pillar digital sales gallery across 4 projects and 13+ towers; re-scoped an initial 6-month roadmap to a lean 4-month MVP via RICE scoring (saving 60 days of dev time) and cut client delivery timelines by 32%.
+    </li>
+    <li>
+      <small>2020 – 2023</small>
+      <h3>Marketing &amp; GTM Head • Relata</h3>
+      Spearheaded product-led growth (PLG) and B2B go-to-market strategies that doubled qualified enterprise sales pipeline. Partnered directly with Product and Sales teams on feature pricing, client onboarding, and renewal strategy.
+    </li>
+    <li>
+      <small>2016 – 2023</small>
+      <h3>Founder &amp; Business Head • Shutter Diaries</h3>
+      Bootstrapped and scaled a creative digital services venture to <strong>₹6 Cr+ cumulative revenue</strong> across 350+ clients and 1,000+ completed projects with full P&amp;L ownership. Engineered streamlined delivery systems and internal scheduling tools that cut turnaround times by 35% and achieved 63% repeat business.
+    </li>
+  </ol>
+</div></section>
+
 <section id="skills" style="padding-top:0"><div class="wrap">
   <h2 class="rv">Core PM Competencies &amp; Toolkit</h2>
   <p class="lead rv">Combining IIT Guwahati engineering rigor, Airtribe AI Product Management training, and 10 years of real-world P&amp;L ownership.</p>
@@ -745,6 +666,85 @@ footer .lead{max-width:52ch;line-height:1.55}
     <p style="margin:0;color:var(--fg);font-size:.95rem;line-height:1.55">
       <strong>IIT Guwahati:</strong> B.Tech in Mechanical Engineering, Minor in Product Design • <strong>Airtribe:</strong> AI Product Management Specialization • <strong>LearnQuest / Coursera:</strong> Scrum Master Certification Specialization.
     </p>
+  </div>
+</div></section>
+
+<section id="capstone" style="padding-top:0"><div class="wrap">
+  <h2 class="rv">Capstone: Porter First-Trip Conversion</h2>
+  <p class="lead rv">An Airtribe PM Launchpad case study on lifting first-trip conversion for Porter’s individual moving customers from 41% to 58%, uncovering that trust—not pricing or fleet size—breaks conversion.</p>
+  <div class="tabs" role="tablist" id="tabs">
+    <button role="tab" aria-selected="true" data-t="p0" data-ga="tab_research">1. Research &amp; Discovery</button>
+    <button role="tab" aria-selected="false" data-t="p1" data-ga="tab_barriers">2. Barrier Prioritization</button>
+    <button role="tab" aria-selected="false" data-t="p2" data-ga="tab_solutions">3. Solutions &amp; Wireframes</button>
+    <button role="tab" aria-selected="false" data-t="p3" data-ga="tab_rollout">4. Gated Rollout Plan</button>
+    <button role="tab" aria-selected="false" data-t="p4" data-ga="tab_impact">5. Business Impact Model</button>
+  </div>
+
+  <div class="panel" id="p0"><div class="grid g2">
+    <div class="card">
+      <h3 style="font-size:1.3rem;margin-bottom:8px">Five Discovery Methods, One Funnel View</h3>
+      <p style="color:var(--mute);margin:0;line-height:1.55">Synthesized qualitative and quantitative insights from a 20-person survey, 8 depth interviews, an end-to-end app/web journey teardown, and competitive analysis against 7 moving logistics competitors.</p>
+    </div>
+    <div class="card">
+      <h3 style="font-size:1.3rem;margin-bottom:8px">The Root Discovery</h3>
+      <p style="color:var(--mute);margin:0;line-height:1.55"><strong>Trust, not pricing, breaks conversion.</strong> Users reported severe pre-move anxiety: unconfirmed truck arrival dates, opaque additional charges upon arrival, and complete blackout between booking confirmation and driver assignment.</p>
+    </div>
+    <div class="card">
+      <h3 style="font-size:1.3rem;margin-bottom:8px">Persona: The Anxious First-Timer</h3>
+      <p style="color:var(--mute);margin:0;line-height:1.55">First-time house mover relocating within Bengaluru/Pune. High stakes, sensitive personal belongings. Needs transparent price lock guarantees and real-time reassurance before parting with deposit money.</p>
+    </div>
+    <div class="card">
+      <h3 style="font-size:1.3rem;margin-bottom:8px">Persona: The Pragmatic Comparer</h3>
+      <p style="color:var(--mute);margin:0;line-height:1.55">Comparing Porter against local packers and Agarwal Packers. Drops off when quoted an arbitrary lump sum without transparent breakdown of labor, toll, fuel, and handling charges.</p>
+    </div>
+  </div></div>
+
+  <div class="panel" id="p1" hidden>
+    <p style="color:var(--mute);margin-top:0">RICE scored 8 distinct drop-off themes; narrowed down to the top two root barriers shown in indigo.</p>
+    <div class="bars" id="bars"></div>
+    <div class="grid g2">
+      <div class="card">
+        <h3 style="font-size:1.25rem;margin-bottom:8px">1. Untrustworthy Quote Step (RICE: 0.266)</h3>
+        <p style="color:var(--mute);margin:0;line-height:1.55">The app hid final cost breakdowns behind multi-tap menus, and the web booking flow mandated a 24–48 hour tele-calling delay, shedding high-intent customers to instant competitors.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:1.25rem;margin-bottom:8px">2. Blackout After Payment (RICE: 0.163)</h3>
+        <p style="color:var(--mute);margin:0;line-height:1.55">Total information vacuum post-payment. Zero visibility into assigned driver identity, truck capacity, or milestone checklist during peak anxiety hours.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="panel" id="p2" hidden>
+    <p style="color:var(--mute);margin-top:0">Two additive, high-leverage interventions utilizing data Porter already possessed. Click each stage:</p>
+    <div class="chipset" id="stages"></div>
+    <div class="ba">
+      <div class="card"><h3>Today (Control)</h3><p id="today" style="margin:0;color:var(--mute);line-height:1.55"></p></div>
+      <div class="card"><h3>With Solution (Test)</h3><p id="after" style="margin:0;color:var(--fg);font-weight:500;line-height:1.55"></p></div>
+    </div>
+    <p class="note"><strong>Solution 1:</strong> Itemised price breakdown + Price-Lock guarantee badge (RICE 0.425). <strong>Solution 2:</strong> Driver, vehicle, and milestone progress reveal (RICE 0.298).</p>
+  </div>
+
+  <div class="panel" id="p3" hidden>
+    <p style="color:var(--mute);margin-top:0">A phased, gated rollout plan focused on Bengaluru and Pune before multi-city scaling. Select stage:</p>
+    <div class="chipset" id="cohorts"></div>
+    <div class="card"><h3 id="cwho" style="margin-bottom:8px;font-size:1.25rem"></h3><p id="cgate" style="margin:0;color:var(--mute);line-height:1.55"></p></div>
+  </div>
+
+  <div class="panel" id="p4" hidden>
+    <div class="card calc">
+      <h3 style="font-size:1.35rem;margin-bottom:6px">Interactive Business Impact Model</h3>
+      <p style="color:var(--mute);margin:0 0 16px;line-height:1.5">Model testing first-trip conversion uplift: 100,000 monthly quote users, baseline 41% lifting toward 58% at ₹8,000 AOV.</p>
+      <label>Monthly quote-stage users<input type="range" id="u" min="20000" max="300000" step="5000" value="100000"><output id="uo"></output></label>
+      <label>Current conversion (%)<input type="range" id="c0" min="20" max="60" value="41"><output id="c0o"></output></label>
+      <label>Target conversion (%)<input type="range" id="c1" min="25" max="80" value="58"><output id="c1o"></output></label>
+      <label>Average order value (₹)<input type="range" id="a" min="2000" max="15000" step="500" value="8000"><output id="ao"></output></label>
+      <div class="res">
+        <div><b id="r1">0</b><span>Extra completed trips / mo</span></div>
+        <div><b id="r2">0</b><span>Extra monthly GMV (₹ Cr)</span></div>
+        <div><b id="r3">0</b><span>Extra monthly take-rate revenue (₹ Cr)</span></div>
+      </div>
+    </div>
+    <p class="note">North Star: First-trip completion rate. Guardrails: Driver cancellation / no-show rate, 30/90-day repeat booking, and customer damage claims.</p>
   </div>
 </div></section>
 
